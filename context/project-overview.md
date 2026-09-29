@@ -159,8 +159,10 @@ technicians, no gradients as brand devices, no glassmorphism, no rounded-pill bu
    `loading="lazy"`. See `performance.md`.
 4. **Tailwind `content` is `./src/**/*.{js,ts,jsx,tsx}` + `./index.html`.** Any new file outside
    `src` with utility classes will not be compiled.
-5. **`tsconfig.app.json` sets `noUnusedLocals: true`**, and the current source has 26 unused-import
-   errors. `npm run build` therefore fails at the `tsc -b` step today. See `progress-tracker.md`.
+5. **`tsconfig.app.json` sets `noUnusedLocals: true`**, and the source carried 26 unused-import /
+   unused-parameter errors that made `npm run build` fail at the `tsc -b` step. **These are now
+   removed and `npm run build` is clean.** Keep the flag — it is the only reason the dead imports
+   were caught. See `progress-tracker.md`.
 
 ---
 

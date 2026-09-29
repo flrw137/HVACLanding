@@ -1,9 +1,8 @@
 import React from 'react';
 import { SubmittalForm } from '../components/contact/SubmittalForm';
 import { DispatchDirectory } from '../components/contact/DispatchDirectory';
-import { SectionHeader } from '../components/common/SectionHeader';
 import { SEO } from '../components/common/SEO';
-import { ShieldCheck, Phone, CheckCircle2 } from 'lucide-react';
+import { ShieldCheck } from 'lucide-react';
 
 export const ContactPage: React.FC = () => {
   return (

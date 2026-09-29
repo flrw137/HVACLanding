@@ -1,15 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { SectionHeader } from '../components/common/SectionHeader';
-import { Badge } from '../components/common/Badge';
 import { SEO } from '../components/common/SEO';
 import {
   ShieldCheck,
   Award,
   CheckCircle2,
-  Users,
   HardHat,
-  ArrowRight,
   Phone,
   FileCheck2,
 } from 'lucide-react';

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { SERVICES } from '../data/servicesData';
 import { SectionHeader } from '../components/common/SectionHeader';
 import { Badge } from '../components/common/Badge';
-import { ArrowRight, ShieldCheck, Clock, CheckCircle2, Phone } from 'lucide-react';
+import { ArrowRight, CheckCircle2, Phone } from 'lucide-react';
 import { SEO } from '../components/common/SEO';
 
 export const ServicesPage: React.FC = () => {
@@ -62,7 +62,7 @@ export const ServicesPage: React.FC = () => {
       {/* All 6 Services Detailed Grid */}
       <section className="w-full bg-surface-container-lowest py-16 lg:py-20 px-margin lg:px-margin-desktop border-b border-structural">
         <div className="max-w-[1320px] mx-auto space-y-12">
-          {SERVICES.map((service, index) => (
+          {SERVICES.map((service) => (
             <div
               key={service.id}
               className="bg-white border border-structural rounded-xl overflow-hidden hover:border-on-surface hover:shadow-lg transition-all duration-200 grid grid-cols-1 lg:grid-cols-12 items-stretch"

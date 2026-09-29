@@ -341,7 +341,7 @@ accepts purely-variable content.
 | Aspect | Reality |
 |---|---|
 | Dev | Vite dev server, HMR via `@vitejs/plugin-react` |
-| Build | `tsc -b && vite build` — **currently fails at `tsc -b` with 25 unused-import errors** |
+| Build | `tsc -b && vite build` — **passes.** It failed at `tsc -b` with 26 unused-declaration errors until they were removed; the site is otherwise type-clean under full `strict` |
 | Output | `dist/` — `index.html` + 1 JS chunk + 1 CSS chunk. **No manualChunks, no code splitting** |
 | Routing on host | requires an SPA rewrite to `/index.html`; **no config file provides one** |
 | `base` | `/` (default) — not sub-path safe |

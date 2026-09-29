@@ -2,16 +2,11 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { SERVICE_HUBS } from '../data/serviceAreasData';
 import { SectionHeader } from '../components/common/SectionHeader';
-import { Badge } from '../components/common/Badge';
 import { SEO } from '../components/common/SEO';
 import {
   MapPin,
   Phone,
-  Clock,
-  ShieldCheck,
   CheckCircle2,
-  Building2,
-  ArrowRight,
 } from 'lucide-react';
 
 export const ServiceAreasPage: React.FC = () => {

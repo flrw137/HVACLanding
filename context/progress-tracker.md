@@ -17,7 +17,8 @@
 > 3. Replace the "Source inventory" table with the new project's files and line counts.
 > 4. Replace the "Baseline facts" table with values measured from the new source — **do not carry
 >    any number over**. Every count in this file (38 files, 5,657 lines, 49 records, 14 images,
->    25 URLs, 47 colours, 55 containers, 19 `useState`, 25 `TS6133`…) is specific to this repo.
+>    22 indexable URLs, 47 colours, 112 container wrappers, 19 `useState`, 26 `TS6133`…) is
+>    specific to this repo.
 > 5. Rewrite the "Known defects" list from the new codebase.
 > 6. Delete the "Reconciliation" section unless the numbers were re-measured.
 > 7. Update the repo path in the header.
@@ -33,7 +34,7 @@
 | Read `tailwind.config.ts` (111 lines) | ✅ | `theme.extend` has **5** groups only: 47 colours · 6 `borderRadius` · 10 `spacing` · 15 `fontFamily` · 12 `fontSize`. Plus `darkMode: 'class'`, `content` globs, `plugins: []`. **No `aspectRatio`, `transitionDuration`, `keyframes`, `screens`, `zIndex`, or `container`** |
 | Read `src/index.css` (71 lines) | ✅ | `@layer base` (html/body/h1–h6/code), `@keyframes kenburns` + `.kenburns-active`, 4 `::-webkit-scrollbar*` rules, 2 **top-level** `.border-structural*` classes, form `:focus` override. No `.font-*` family classes |
 | Read `index.html` (20 lines) | ✅ | 3 font families (line 13) + 1 dead icon font (line 14), inline SVG favicon, 2 static meta tags |
-| Read all 3 tsconfigs + `vite.config.ts` + `postcss.config.js` | ✅ | full `strict`, 25 `TS6133` errors result |
+| Read all 3 tsconfigs + `vite.config.ts` + `postcss.config.js` | ✅ | full `strict`; the 26 `TS6133` errors they produced are now fixed |
 | Count source files and lines | ✅ | **38 files, 5,657 lines** (`src/**/*.{ts,tsx}`) |
 | Enumerate components / pages / data modules | ✅ | 19 / 11 / 5 |
 
@@ -73,7 +74,7 @@
 
 | Task | Status | Notes |
 |---|---|---|
-| Typecheck (`npx tsc --noEmit -p tsconfig.app.json`) | ✅ | 25 `TS6133` — **the build fails at `tsc -b`** |
+| Typecheck (`npx tsc --noEmit -p tsconfig.app.json`) | ✅ | was 26 `TS6133` with the build failing at `tsc -b`; **now 0 — build passes** |
 | Dependency audit (used vs. dead) | ✅ | `gsap`, `clsx`, `tailwind-merge` dead; `Button.tsx` dead |
 | Accessibility audit | ✅ | 8 blocking defects, 3 contrast failures, per-page SR walkthrough |
 | SEO audit | ✅ | 11 `SEO` call sites, 8 title clashes, no canonical/OG/JSON-LD/sitemap |
@@ -118,7 +119,7 @@
 | Every export in `src/data/*.ts` has a table in `content-structure.md` | ✅ |
 | Every colour/font/radius/spacing token in `tailwind.config.ts` appears in `design-system.md` | ✅ |
 | Every `SEO` call site's exact `title` prop is listed in `seo-and-metadata.md` | ✅ |
-| The 25 `TS6133` errors are enumerated by file in `tech-stack.md` and `replication-checklist.md` | ✅ |
+| The 26 `TS6133` errors are enumerated by file in `tech-stack.md` and `replication-checklist.md`, and all are now **removed** | ✅ |
 | The 14 image URLs are enumerated with a de-duplication map in `assets.md` | ✅ |
 | Both conflicting addresses are flagged in `content-structure.md`, `forms-and-conversion.md`, `seo-and-metadata.md`, `replication-checklist.md` | ✅ |
 | The `/services` vs `/index` redirect confusion is resolved to the code (`/services`, `ServiceDetailPage.tsx:24`) | ✅ |
@@ -144,7 +145,7 @@
 | Unique images / references | 14 / 22 | URL extraction across `src/**` |
 | Fonts requested / used | 4 / 3 | `index.html` + import audit |
 | `useState` calls | 11 across 6 components | per-file scan |
-| Build errors | 25 `TS6133` | `npx tsc --noEmit -p tsconfig.app.json` |
+| Build errors | was 26 `TS6133` | ✅ **fixed** — `npx tsc --noEmit -p tsconfig.app.json` clean, `npm run build` exits 0 |
 | Dead dependencies | 3 | `clsx`, `tailwind-merge`, `gsap` |
 | Dead components | 1 | `src/components/common/Button.tsx` |
 | Dead query params | 2 | `?service=`, `?financing=` |
@@ -176,7 +177,7 @@
 | 15 | Form borders 1.6:1; placeholders ~2.8:1; hairline 1.24:1 | `accessibility.md` §4 |
 | 16 | `z-1` ×4, `border-structural/50`, `text-structural-dim`, `scrollbar-none`, `animate-in` family | `motion-and-interactions.md` §3, `ui-rules.md` |
 | 17 | Mega-menu chevron never rotates (no `group`) | `motion-and-interactions.md` §3.2 |
-| 18 | 25 `TS6133` errors block the build | `tech-stack.md` §3 |
+| 18 | 26 `TS6133` errors blocked the build | `tech-stack.md` §3 — **now fixed** |
 | 19 | `Button.tsx` never imported | `component-library.md`, `architecture.md` §7 |
 | 20 | `ScrollToTop` fights Lenis | `motion-and-interactions.md` §5.1, `architecture.md` §4 |
 | 21 | `html { scroll-behavior: smooth }` + Lenis | `performance.md`, `implementation-guide.md` §2 |
@@ -237,7 +238,7 @@
 | 🟠 5 | SEO: canonical, OG/Twitter, JSON-LD, sitemap, `<Navigate replace>` aliases | 1 day |
 | 🟠 6 | Images: 1 hero request, lazy-load, AVIF/WebP, `srcset` | 1 day |
 | 🟠 7 | Self-host + subset the 3 fonts; delete Material Symbols; redesign the favicon | 0.5 day |
-| 🟠 8 | Fix all 25 `TS6133`; add ESLint 9 + `typescript-eslint` | 0.5 day |
+| 🟡 8 | ~~Fix all `TS6133`~~ — **done (26 removed, build green)**; remaining: add ESLint 9 + `typescript-eslint` | 0.25 day |
 | 🟡 9 | `manualChunks`, route-level lazy loading, bundle budget in CI | 0.5 day |
 | 🟡 10 | SPA rewrite config + security headers + `<noscript>` | 0.5 day |
 | 🟡 11 | `ErrorBoundary`, `useReducedMotion`, `cn()`, split the 500-line page | 1 day |

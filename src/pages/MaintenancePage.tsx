@@ -3,9 +3,8 @@ import { Link } from 'react-router-dom';
 import { PipelineSection } from '../components/maintenance/PipelineSection';
 import { ChecklistSection } from '../components/maintenance/ChecklistSection';
 import { TierMatrixSection } from '../components/maintenance/TierMatrixSection';
-import { SectionHeader } from '../components/common/SectionHeader';
 import { SEO } from '../components/common/SEO';
-import { Phone, ArrowRight, ShieldCheck, CheckCircle2 } from 'lucide-react';
+import { Phone, ArrowRight, ShieldCheck } from 'lucide-react';
 
 export const MaintenancePage: React.FC = () => {
   return (

@@ -1,17 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { SectionHeader } from '../components/common/SectionHeader';
-import { Badge } from '../components/common/Badge';
 import { SEO } from '../components/common/SEO';
 import {
-  DollarSign,
   TrendingDown,
   Building,
   FileCheck,
-  ShieldCheck,
   ArrowRight,
-  Phone,
-  Calculator,
 } from 'lucide-react';
 
 export const FinancingPage: React.FC = () => {

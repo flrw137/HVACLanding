@@ -105,8 +105,8 @@ npx tailwindcss init -p
 }
 ```
 
-`noUnusedLocals` is what makes the reference fail its own build. **Keep it** — it is why the
-codebase has no type errors — and delete unused imports as you go.
+`noUnusedLocals` is what made the reference fail its own build. **Keep it** — it is why the
+codebase has no *real* type errors — and delete unused imports as you go.
 
 ### 1.2 `vite.config.ts`
 
@@ -385,7 +385,7 @@ Plus the three 1px boundaries: **639↔640**, **1023↔1024**, **1279↔1280**.
 ### 8.2 Typecheck and build
 
 ```bash
-npx tsc --noEmit -p tsconfig.app.json   # must be clean — the reference has 25 TS6133
+npx tsc --noEmit -p tsconfig.app.json   # must be clean — the reference had 26 TS6133 (now 0)
 npm run build                          # must succeed
 npm run preview
 ```
@@ -465,7 +465,7 @@ colours, and 10 input borders use a hard-coded `#cbd0d8`. Brand hexes belong in
 | 17 | `NotFoundPage` has no description | `NotFoundPage` | the 404 advertises the home page |
 | 18 | 2 conflicting HQ addresses | 3 files | the wrong one ships |
 | 19 | `html { scroll-behavior: smooth }` + Lenis | `index.css` / `Layout` | fighting scroll behaviours |
-| 20 | `Button.tsx` exists and is never imported | `common/Button.tsx` | 25 TS6133 errors; a "component library" that isn't one |
+| 20 | `Button.tsx` exists and is never imported | `common/Button.tsx` | a "component library" that isn't one (its 26 `TS6133` errors are now fixed) |
 
 ---
 

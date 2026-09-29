@@ -68,27 +68,30 @@ never imported.** A rebuild should start from `react`, `react-dom`, `react-route
 
 Only 3 scripts. No `lint`, no `typecheck`, no `test`, no `format`, no `analyze`, no `clean`.
 
-### ⚠ `npm run build` currently FAILS
+### `npm run build` — clean as of the audit (was failing)
 
 `build` runs `tsc -b` **before** Vite, and `tsconfig.app.json` sets
-`"strict": true`, `"noUnusedLocals": true`, `"noUnusedParameters": true`. The typecheck reports
-**25 `TS6133` "declared but its value is never read" errors** — every one an unused import in a
-page:
+`"strict": true`, `"noUnusedLocals": true`, `"noUnusedParameters": true`. The reference
+originally failed here with **26 `TS6133` "declared but its value is never read" errors** — 25
+unused imports plus one unused `.map()` parameter, all in pages:
 
-| File | Unused imports |
+| File | Removed (all were genuinely unused) |
 |---|---|
 | `AboutPage.tsx` | `Badge`, `Users`, `ArrowRight` |
 | `ContactPage.tsx` | `SectionHeader`, `Phone`, `CheckCircle2` |
 | `FinancingPage.tsx` | `Badge`, `DollarSign`, `ShieldCheck`, `Phone`, `Calculator` |
 | `MaintenancePage.tsx` | `SectionHeader`, `CheckCircle2` |
 | `ServiceAreasPage.tsx` | `Badge`, `Clock`, `ShieldCheck`, `Building2`, `ArrowRight` |
-| `ServiceDetailPage.tsx` | `SectionHeader`, `Badge`, `ShieldCheck`, `Clock`, `Wrench`, `HelpCircle` |
+| `ServiceDetailPage.tsx` | `SectionHeader`, `Badge`, `ShieldCheck`, `Clock`, `Wrench` |
+| `ServicesPage.tsx` | `ShieldCheck`, `Clock`, and the unused `index` in `SERVICES.map((service, index) =>` |
 
-**All 25 are trivial deletions.** The site is otherwise type-clean under full `strict`. This is a
-strong signal: the JSX is well-typed, the failure is purely dead import lines left behind by
-iterative editing. **A rebuild should ship with `tsc -b` green and a `typecheck` script.**
+All 26 were trivial deletions with no rendering effect. The site is type-clean under full
+`strict` and `npm run build` now emits `dist/` successfully (~522 kB JS / ~35 kB CSS, 1,944
+modules). This remains a good signal about the codebase: the JSX was always well-typed, and the
+failure was purely dead import lines left behind by iterative editing. **A rebuild should keep
+`tsc -b` green and add a standalone `typecheck` script.**
 
-Reproduce with a read-only command (does not touch `dist/`):
+Verify without touching `dist/`:
 
 ```
 npx tsc --noEmit -p tsconfig.app.json
@@ -129,7 +132,7 @@ projects. This is the correct Vite template shape.
 | `noEmit` | `true` | typecheck only; Vite does the transpiling |
 | `jsx` | `react-jsx` | no need to import React (though `main.tsx` still does) |
 | `strict` | `true` | `strictNullChecks`, `noImplicitAny`, `strictFunctionTypes`, etc. |
-| `noUnusedLocals` | `true` | ← the source of the 25 build errors |
+| `noUnusedLocals` | `true` | ← the source of the reference's 26 build errors (now fixed) |
 | `noUnusedParameters` | `true` | ← ditto |
 | `noFallthroughCasesInSwitch` | `true` | |
 | `skipLibCheck` | `true` | **should be off in a strict project**; it hides type errors in `node_modules` |

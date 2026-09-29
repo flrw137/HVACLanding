@@ -1,16 +1,11 @@
 import React from 'react';
 import { useParams, Link, Navigate } from 'react-router-dom';
 import { SERVICES } from '../data/servicesData';
-import { SectionHeader } from '../components/common/SectionHeader';
-import { Badge } from '../components/common/Badge';
 import {
   ArrowRight,
-  ShieldCheck,
   CheckCircle2,
   Phone,
   FileText,
-  Clock,
-  Wrench,
   HelpCircle,
   ChevronRight,
 } from 'lucide-react';

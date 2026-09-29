@@ -33,7 +33,7 @@
 | Form | 10 fields, **9 required**, ≥25-char scope, 800ms fake submit, `VTX-PE-######` | `SubmittalForm` |
 | Smooth scroll | Lenis, `duration: 1.1`, expo-out | `Layout` |
 | `useState` calls | **11** across 6 components | per-file scan |
-| Dead imports (build blockers) | **25** `TS6133` | `tsc --noEmit` |
+| Dead imports (build blockers) | **26** `TS6133` — now **0**, `npm run build` passes | `tsc --noEmit` |
 | Dead dependencies | `gsap`, `clsx`, `tailwind-merge` | import audit |
 | Dead component | `src/components/common/Button.tsx` | import audit |
 | Dead query params | `?service=`, `?financing=` | param audit |
@@ -202,7 +202,7 @@
 - [ ] `faqs` accordion (3 per service)
 - [ ] Related services from `relatedServiceSlugs`/slug matches; empty state if none
 - [ ] `<SEO title={`${title} | Vertex Solutions`} description={summary} />` → fixed suffix handling
-- [ ] 10/10 unused imports deleted (this file alone has 6)
+- [ ] 10/10 unused imports deleted — **done** (this file alone had 5)
 
 ## 10. MaintenancePage
 
@@ -435,7 +435,7 @@
 | 15 | Form field borders at 1.6:1; placeholders at ~2.8:1 | token colours |
 | 16 | `z-1` (invalid), `border-structural/50` (dead), `text-structural-dim` (dead), `scrollbar-none` (dead), `animate-in`/`fade-in`/`slide-in-from-top-*`/`zoom-in-95` (dead) | real utilities |
 | 17 | Mega-menu chevron never rotates (no `group` on the wrapper) | add `group` |
-| 18 | 25 `TS6133` errors block the build | delete the imports |
+| 18 | 26 `TS6133` errors blocked the build | delete the imports — **done** |
 | 19 | `Button.tsx` exists and is never imported | use it or delete it |
 | 20 | `ScrollToTop` fights Lenis (native `window.scrollTo`) | share the instance |
 | 21 | `html { scroll-behavior: smooth }` + Lenis | pick one |
