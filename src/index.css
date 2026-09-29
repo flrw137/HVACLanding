@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Inter', sans-serif;
+    color: #191c1d;
+    background-color: #ffffff;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Space Grotesk', sans-serif;
+  }
+
+  code, pre, .font-mono, [data-mono] {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+/* Ken Burns dynamic slider animation */
+@keyframes kenburns {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+.kenburns-active {
+  animation: kenburns 12s ease-in-out infinite alternate;
+}
+
+/* Custom minimal scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f3f4f5;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd0d8;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #906f6e;
+}
+
+/* Precision hairlines & card borders */
+.border-structural {
+  border-color: #e2e4e8;
+}
+
+.border-structural-dim {
+  border-color: #cbd0d8;
+}
+
+/* Focus styles */
+input:focus, textarea:focus, select:focus {
+  outline: 1px solid #111315 !important;
+  border-color: #111315 !important;
+}

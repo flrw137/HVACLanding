@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;family=Space+Grotesk:wght@600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-primary-fixed-variant":"#92001c","tertiary-fixed-dim":"#bfc7d5","surface-container-low":"#f3f4f5","inverse-primary":"#ffb3b1","error-container":"#ffdad6","on-error-container":"#93000a","surface-container-lowest":"#ffffff","primary-fixed-dim":"#ffb3b1","inverse-surface":"#2e3132","primary-fixed":"#ffdad8","background":"#f8f9fa","surface-bright":"#f8f9fa","on-error":"#ffffff","on-secondary-container":"#636467","on-surface-variant":"#5c403f","secondary-fixed":"#e2e2e5","surface-container-high":"#e7e8e9","surface-dim":"#d9dadb","surface-variant":"#e1e3e4","on-tertiary-fixed-variant":"#3f4753","surface-tint":"#bf0229","inverse-on-surface":"#f0f1f2","on-background":"#191c1d","tertiary":"#454d59","secondary-container":"#e2e2e5","tertiary-fixed":"#dbe3f1","on-primary-container":"#ffdad8","on-tertiary-fixed":"#141c26","on-tertiary":"#ffffff","on-primary-fixed":"#410007","tertiary-container":"#5d6571","on-secondary":"#ffffff","surface-container":"#edeeef","on-tertiary-container":"#dbe3f1","secondary":"#5d5e61","outline-variant":"#e5bdbb","surface":"#f8f9fa","surface-container-highest":"#e1e3e4","outline":"#906f6e","on-primary":"#ffffff","on-secondary-fixed":"#1a1c1e","secondary-fixed-dim":"#c6c6c9","on-secondary-fixed-variant":"#454749","error":"#ba1a1a","primary-container":"#c8102e","primary":"#9e001f","on-surface":"#191c1d"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"space-md":"1rem","gutter-desktop":"2rem","margin-desktop":"3rem","space-xs":"0.25rem","margin-tablet":"2rem","gutter":"1.5rem","space-xl":"2.5rem","space-sm":"0.5rem","space-lg":"1.5rem","margin":"1rem"},"fontFamily":{"headline-lg":["Space Grotesk"],"display-xl":["Space Grotesk"],"body-md":["Inter"],"body-sm":["Inter"],"label-mono-sm":["JetBrains Mono"],"headline-lg-mobile":["Space Grotesk"],"label-technical":["JetBrains Mono"],"headline-sm":["Space Grotesk"],"headline-md":["Space Grotesk"],"body-lg":["Inter"],"display-xl-mobile":["Space Grotesk"],"button-text":["Inter"]},"fontSize":{"headline-lg":["40px",{"lineHeight":"48px","letterSpacing":"-0.01em","fontWeight":"600"}],"display-xl":["56px",{"lineHeight":"64px","letterSpacing":"-0.02em","fontWeight":"600"}],"body-md":["15px",{"lineHeight":"25px","letterSpacing":"0","fontWeight":"400"}],"body-sm":["13px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"400"}],"label-mono-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.04em","fontWeight":"400"}],"headline-lg-mobile":["28px",{"lineHeight":"36px","letterSpacing":"0","fontWeight":"600"}],"label-technical":["12px",{"lineHeight":"16px","letterSpacing":"0.06em","fontWeight":"500"}],"headline-sm":["20px",{"lineHeight":"28px","letterSpacing":"0","fontWeight":"600"}],"headline-md":["28px",{"lineHeight":"36px","letterSpacing":"-0.005em","fontWeight":"600"}],"body-lg":["18px",{"lineHeight":"30px","letterSpacing":"0","fontWeight":"400"}],"display-xl-mobile":["36px",{"lineHeight":"44px","letterSpacing":"-0.01em","fontWeight":"600"}],"button-text":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"600"}]}}}}</script></head><body class="bg-surface-container-lowest text-on-surface font-body-md text-body-md antialiased"><header class="fixed top-0 left-0 w-full z-50 bg-surface-container-lowest border-b border-surface-container-high"><div class="h-8 w-full bg-surface-container-low border-b border-surface-container-high px-margin lg:px-margin-desktop"><div class="max-w-[1320px] mx-auto h-full flex items-center justify-between font-label-mono-sm text-label-mono-sm text-secondary"><div class="flex items-center gap-space-sm"><span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span><span>Midwest Regional Engineering (IN · OH · KY) • Lic #HVAC-MECH-48209</span></div><div class="flex items-center gap-space-md"><span class="hidden sm:inline">24/7 Commercial Dispatch:</span><a class="font-label-technical text-label-technical text-on-surface hover:text-primary transition-colors font-medium" href="tel:8005550194">(800) 555-0194</a></div></div></div><div class="h-[72px] max-w-[1320px] mx-auto px-margin lg:px-margin-desktop flex items-center justify-between"><div class="flex items-center gap-space-md"><img alt="Vertex Solutions Clean Vector Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1X27bRqdcNiUeB0pb_hPPkOuwnVSIjn6iEbuL3_TwkKW_oM6ieJuds08YRDyBkKaOusCOpRkK0hOFpd79vdp3gylb2BvKjMCAnvS-LzBJ060rE5LgvPdbhUfGT9b8mqqvfRUpuiUaPcJUErQXRnCeomcgSRZRN3t19EZ56dg9xyNk7cB4XXL3iDTgoJU-aZMZQ7l_0R6DwGBzK7k_T85k3WTleTm0eR_E6A1Gz8K9rah5qRno0eLCDCeSo"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm uppercase tracking-tight text-on-surface leading-none">Vertex Solutions</span><span class="font-label-mono-sm text-label-mono-sm text-secondary uppercase tracking-widest">Mechanical &amp; Industrial HVAC</span></div></div><nav class="hidden lg:flex items-center gap-space-lg h-full" data-active-classes="text-on-surface border-b-2 border-primary-container font-semibold"><a class="text-secondary hover:text-on-surface font-button-text text-button-text h-full inline-flex items-center border-b-2 border-transparent transition-colors" data-path="overview" href="#">Overview</a><a class="text-secondary hover:text-on-surface font-button-text text-button-text h-full inline-flex items-center border-b-2 border-transparent transition-colors" data-path="services" href="#">Services</a><a aria-current="page" class="h-full inline-flex items-center transition-colors text-on-surface border-b-2 border-primary-container font-semibold" data-path="case-studies" href="#">Case Studies</a><a class="text-secondary hover:text-on-surface font-button-text text-button-text h-full inline-flex items-center border-b-2 border-transparent transition-colors" data-path="maintenance-process" href="#">Maintenance Process</a><a class="text-secondary hover:text-on-surface font-button-text text-button-text h-full inline-flex items-center border-b-2 border-transparent transition-colors" data-path="company-and-trust" href="#">Company &amp; Trust</a></nav><div class="flex items-center gap-space-md"><a class="hidden xl:flex items-center gap-space-xs text-secondary hover:text-on-surface font-button-text text-button-text transition-colors" href="tel:8005550194"><span class="material-symbols-outlined text-[18px]">call</span><span>(800) 555-0194</span></a><a class="bg-primary-container hover:bg-primary text-on-primary font-button-text text-button-text px-space-md py-2.5 rounded-lg transition-colors flex items-center justify-center shadow-none" data-path="request-consultation" href="#">Request Consultation</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-[104px] bg-surface-container-lowest"><div class="flex flex-col w-full">
+<!-- Macro Section: Editorial Header & Technical Telemetry -->
+<section class="w-full bg-surface-container-lowest px-margin lg:px-margin-desktop pt-space-xl pb-space-lg">
+<div class="max-w-[1320px] mx-auto flex flex-col gap-space-lg">
+<!-- Eyebrow & Live Engineering Index Flag -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm pb-space-xs">
+<div class="flex items-center gap-space-sm">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<span class="font-label-technical text-label-technical tracking-widest text-primary-container uppercase">PORTFOLIO &amp; CASE STUDIES</span>
+<span class="font-label-mono-sm text-label-mono-sm text-secondary">/ FIELD COMMISSIONING REGISTRY</span>
+</div>
+<div class="flex items-center gap-space-xs bg-surface-container-low px-space-sm py-1 rounded">
+<span class="font-label-mono-sm text-label-mono-sm text-secondary">VERIFIED ASHRAE 90.1 AUDIT LOGS</span>
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+</div>
+</div>
+<!-- Main Headline Block with High-Contrast Typography Hierarchy -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop items-baseline">
+<div class="lg:col-span-8 flex flex-col gap-space-sm">
+<h1 class="font-display-xl text-display-xl tracking-tight text-on-surface uppercase">
+            Documented Mechanical HVAC Installations &amp; Retrofits
+          </h1>
+</div>
+<div class="lg:col-span-4 flex flex-col justify-end">
+<p class="font-body-md text-body-md text-secondary">
+            Engineering dossiers detailing field-delivered capacity, hydraulic balance, thermal performance coefficients, and verified utility reductions across industrial, healthcare, and enterprise facilities.
+          </p>
+</div>
+</div>
+<!-- High-Level Telemetry Metrics Ribbon -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-gutter bg-surface-container-low p-space-md rounded-lg mt-space-sm">
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-mono-sm text-label-mono-sm uppercase text-secondary">Commissioned Projects</span>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-display-xl text-headline-lg text-on-surface">240+</span>
+<span class="font-label-mono-sm text-label-mono-sm text-primary-container font-semibold">MIDWEST</span>
+</div>
+<span class="font-label-mono-sm text-label-mono-sm text-secondary">Field sign-offs complete</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-mono-sm text-label-mono-sm uppercase text-secondary">Delivered Tonnage</span>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-display-xl text-headline-lg text-on-surface">14,850</span>
+<span class="font-label-mono-sm text-label-mono-sm text-secondary">TR</span>
+</div>
+<span class="font-label-mono-sm text-label-mono-sm text-secondary">Chilled water &amp; direct vapor</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-mono-sm text-label-mono-sm uppercase text-secondary">Aggregate Displacement</span>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-display-xl text-headline-lg text-on-surface">2.4M</span>
+<span class="font-label-mono-sm text-label-mono-sm text-secondary">CFM</span>
+</div>
+<span class="font-label-mono-sm text-label-mono-sm text-secondary">Positive pressure &amp; DOAS</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-mono-sm text-label-mono-sm uppercase text-secondary">Mean Verified Reduction</span>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-display-xl text-headline-lg text-primary-container">-23.6%</span>
+<span class="font-label-mono-sm text-label-mono-sm text-secondary">kWh/yr</span>
+</div>
+<span class="font-label-mono-sm text-label-mono-sm text-secondary">Post-occupancy validation</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Sector Filtering Strip -->
+<section class="w-full bg-surface-container-lowest px-margin lg:px-margin-desktop py-space-sm sticky top-[104px] z-30 shadow-sm backdrop-blur">
+<div class="max-w-[1320px] mx-auto flex items-center justify-between overflow-x-auto no-scrollbar gap-space-md py-space-xs">
+<div class="flex items-center gap-space-xs shrink-0" id="filter-bar">
+<button class="filter-btn active-filter px-space-md py-2 rounded-lg font-label-technical text-label-technical bg-on-surface text-surface-container-lowest transition-all flex items-center gap-2" data-filter="all">
+<span>ALL PROJECTS</span>
+<span class="bg-surface-container-lowest text-on-surface text-[10px] px-1.5 py-0.5 rounded font-label-mono-sm">08</span>
+</button>
+<button class="filter-btn px-space-md py-2 rounded-lg font-label-technical text-label-technical bg-surface-container-low text-secondary hover:text-on-surface transition-all flex items-center gap-2" data-filter="industrial">
+<span>INDUSTRIAL</span>
+<span class="text-[10px] opacity-75 font-label-mono-sm">02</span>
+</button>
+<button class="filter-btn px-space-md py-2 rounded-lg font-label-technical text-label-technical bg-surface-container-low text-secondary hover:text-on-surface transition-all flex items-center gap-2" data-filter="healthcare">
+<span>HEALTHCARE</span>
+<span class="text-[10px] opacity-75 font-label-mono-sm">02</span>
+</button>
+<button class="filter-btn px-space-md py-2 rounded-lg font-label-technical text-label-technical bg-surface-container-low text-secondary hover:text-on-surface transition-all flex items-center gap-2" data-filter="office">
+<span>CLASS A OFFICE</span>
+<span class="text-[10px] opacity-75 font-label-mono-sm">01</span>
+</button>
+<button class="filter-btn px-space-md py-2 rounded-lg font-label-technical text-label-technical bg-surface-container-low text-secondary hover:text-on-surface transition-all flex items-center gap-2" data-filter="education">
+<span>EDUCATION</span>
+<span class="text-[10px] opacity-75 font-label-mono-sm">01</span>
+</button>
+<button class="filter-btn px-space-md py-2 rounded-lg font-label-technical text-label-technical bg-surface-container-low text-secondary hover:text-on-surface transition-all flex items-center gap-2" data-filter="hospitality">
+<span>HOSPITALITY</span>
+<span class="text-[10px] opacity-75 font-label-mono-sm">01</span>
+</button>
+<button class="filter-btn px-space-md py-2 rounded-lg font-label-technical text-label-technical bg-surface-container-low text-secondary hover:text-on-surface transition-all flex items-center gap-2" data-filter="coldstorage">
+<span>COLD STORAGE</span>
+<span class="text-[10px] opacity-75 font-label-mono-sm">01</span>
+</button>
+</div>
+<!-- Quick Index Count Flag -->
+<div class="hidden xl:flex items-center gap-space-sm shrink-0 font-label-mono-sm text-label-mono-sm text-secondary">
+<span class="material-symbols-outlined text-[16px] text-primary-container">tune</span>
+<span id="registry-status">DISPLAYING 8 COMMISSIONED FIELD LOGS</span>
+</div>
+</div>
+</section>
+<!-- Dossier Portfolio Grid -->
+<section class="w-full bg-surface-container-low px-margin lg:px-margin-desktop py-space-xl">
+<div class="max-w-[1320px] mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter-desktop" id="projects-grid">
+<!-- Case 01: Apex Logistics -->
+<article class="project-dossier bg-surface-container-lowest rounded-xl flex flex-col overflow-hidden shadow-sm hover:shadow-md transition-all duration-200" data-sector="industrial">
+<div class="p-space-lg flex flex-col gap-space-sm bg-surface-container-lowest">
+<div class="flex items-center justify-between">
+<span class="font-label-mono-sm text-label-mono-sm text-secondary">COLUMBUS, OH • 2024</span>
+<span class="font-label-technical text-label-technical text-primary-container bg-surface-container-low px-2 py-0.5 rounded">INDUSTRIAL / LOGISTICS</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface uppercase">Apex Logistics Hub Central Ventilation</h3>
+<p class="font-body-sm text-body-sm text-secondary">
+              Turnkey ventilation and heating modernization with direct-fired makeup air across a 420,000 sq. ft. multi-dock distribution footprint.
+            </p>
+</div>
+<!-- Technical Photography Frame -->
+<div class="relative w-full h-52 bg-surface-container overflow-hidden group">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Modern hydronic piping and industrial ventilation ductwork installed inside a large high-bay warehouse ceiling with steel trusses and precise duct runs in sharp lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBieWfbhekgORoWv4CTOn8bdPrTMFVYMtBr4URxGZaWLAngweCmCI0QR5lJn3N6Khc57jiu2IOoJg_FeBxzCTTM1BunnA_3fyhrgWQYMmCbTUHs3nQv8pck8V4mEciEO2CIk95Ko-N-jdXKVITFn9XbWnREHR81VVn4Wx3OQnv6r-0MtWqnnpeqjbdK-yAG_G67w5PHqPi26pkWwwz7-xYMqf3TmAoMqcvKmxTzV19sD8HSmB1XVUf0aw"/>
+<div class="absolute bottom-2 left-2 bg-on-surface/90 text-surface-container-lowest font-label-mono-sm text-label-mono-sm px-2 py-0.5 rounded">
+              MAU-01 THRU 06 TELEMETRY OK
+            </div>
+</div>
+<!-- Engineering Specs Grid -->
+<div class="grid grid-cols-3 bg-surface-container-low p-space-md text-center gap-space-xs">
+<div class="flex flex-col">
+<span class="font-label-mono-sm text-label-mono-sm text-secondary uppercase">Facility Footprint</span>
+<span class="font-headline-sm text-body-md text-on-surface font-semibold">420,000 SQ FT</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-mono-sm text-label-mono-sm text-secondary uppercase">Airflow Capacity</span>
+<span class="font-headline-sm text-body-md text-on-surface font-semibold">210,000 CFM</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-mono-sm text-label-mono-sm text-secondary uppercase">Thermal Metric</span>
+<span class="font-headline-sm text-body-md text-primary-container font-semibold">-14% FUEL</span>
+</div>
+</div>
+<!-- Equipment Manifest & Submittal Footer -->
+<div class="p-space-lg flex flex-col justify-between flex-1 gap-space-md">
+<div class="flex flex-col gap-1">
+<span class="font-label-mono-sm text-label-mono-sm text-secondary uppercase">Equip Schedule</span>
+<p class="font-body-sm text-body-sm text-on-surface">6x direct-fired MAUs, 18 HVLS airflow fans, BACnet MS/TP damper integration.</p>
+</div>
+<a class="inline-flex items-center justify-between text-on-surface hover:text-primary-container font-button-text text-button-text pt-space-sm transition-colors" href="#">
+<span>View Submittal &amp; Performance Data</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Case 02: St. Jude Ambulatory -->
+<article class="project-dossier bg-surface-container-lowest rounded-xl flex flex-col overflow-hidden shadow-sm hover:shadow-md transition-all duration-200" data-sector="healthcare">
+<div class="p-space-lg flex flex-col gap-space-sm bg-surface-container-lowest">
+<div class="flex items-center justify-between">
+<span class="font-label-mono-sm text-label-mono-sm text-secondary">INDIANAPOLIS, IN • 2024</span>
+<span class="font-label-technical text-label-technical text-primary-container bg-surface-container-low px-2 py-0.5 rounded">HEALTHCARE / CRITICAL</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface uppercase">St. Jude Ambulatory Chiller Plant</h3>
+<p class="font-body-sm text-body-sm text-secondary">
+              Zero-downtime surgical suite central plant overhaul utilizing dual frictionless magnetic-bearing centrifugal chillers.
+            </p>
+</div>
+<div class="relative w-full h-52 bg-surface-container overflow-hidden group">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Industrial centrifugal chillers and precision hydronic circulating pumps with heavy insulated stainless piping in a hospital basement mechanical room." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2p8zH5XLVEZyhLBUI5ev31ciW1NM1QqR4aV9Zqth8H22JvHNm4Ma_jqEqb1XuY4pSrkUYEOYbx7Cxd_wYZmfEX6BnI1SJrZh1MdaegzcX-_QKKlaAa5Etfp3kWVwFNpWbvdFCy3EfqnrcTM9GY7EhhBGEBilTqOcL3ZOj6E6929vgrxpyofu268PdAQ1wRImm1ckoORNmCd9-Lo9pB1W04iISQzCN9djuVuZgcCx6NwgQPYBhBiYoWg"/>
+<div class="absolute bottom-2 left-2 bg-on-surface/90 text-surface-container-lowest font-label-mono-sm text-label-mono-sm px-2 py-0.5 rounded">
+              N+1 REDUNDANCY ACTIVE
+            </div>
+</div>
+<div class="grid grid-cols-3 bg-surface-container-low p-space-md text-center gap-space-xs">
+<div class="flex flex-col">
+<span class="font-label-mono-sm text-label-mono-sm text-secondary uppercase">Cooling Load</span>
+<span class="font-headline-sm text-body-md text-on-surface font-semibold">400 TR N+1</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-mono-sm text-label-mono-sm text-secondary uppercase">Hydronic Flow</span>
+<span class="font-headline-sm text-body-md text-on-surface font-semibold">960 GPM</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-mono-sm text-label-mono-sm text-secondary uppercase">Verified Delta</span>
+<span class="font-headline-sm text-body-md text-primary-container font-semibold">-28% KWH</span>
+</div>
+</div>
+<div class="p-space-lg flex flex-col justify-between flex-1 gap-space-md">
+<div class="flex flex-col gap-1">
+<span class="font-label-mono-sm text-label-mono-sm text-secondary uppercase">Equip Schedule</span>
+<p class="font-body-sm text-body-sm text-on-surface">2x 200-ton magnetic chillers, redundant VFD pumps, ASHRAE 170 compliance matrix.</p>
+</div>
+<a class="inline-flex items-center justify-between text-on-surface hover:text-primary-container font-button-text text-button-text pt-space-sm transition-colors" href="#">
+<span>View Submittal &amp; Performance Data</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Case 03: Keystone Tower -->
+<article class="project-dossier bg-surface-container-lowest rounded-xl flex flex-col overflow-hidden shadow-sm hover:shadow-md transition-all duration-200" data-sector="office">
+<div class="p-space-lg flex flex-col gap-space-sm bg-surface-container-lowest">
+<div class="flex items-center justify-between">
+<span class="font-label-mono-sm text-label-mono-sm text-secondary">LOUISVILLE, KY • 2023</span>
+<span class="font-label-technical text-label-technical text-primary-container bg-surface-container-low px-2 py-0.5 rounded">CLASS A OFFICE</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface uppercase">Keystone Tower Rooftop Modernization</h3>
+<p class="font-body-sm text-body-sm text-secondary">
+              Accelerated 36-hour weekend heavy-lift helicopter crane maneuver replacing 4x legacy packaged units atop an active 16-story commercial tower.
+            </p>
+</div>
+<div class="relative w-full h-52 bg-surface-container overflow-hidden group">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Rooftop HVAC packaged commercial units with galvanized ducting and structural steel curbs against a clear metropolitan city skyline." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_Eu0nX3X3swgbtmau4v8UvQD3sDab35hV4sHUXx6ep5uB05F9yV1hHcGh8eEEUTbXklaOb3G1w5-JzpfJbGWzL8GhfC3CG4IRZGGfYkz5FkvbJc_9wEV_rI_YASOVNBEevMdbcuCtQeGfdknG9Vr8ko8jwHUkgxw1_y4Xv8JOZU7hcRuXmDxd2C70uD3wdv1EH2eIc0JjbgPZbOB5YhBhj9mSbh-aNuy4PxKzUallmu92shR-Hs-cSQ"/>
+<div class="absolute bottom-2 left-2 bg-on-surface/90 text-surface-container-lowest font-label-mono-sm text-label-mono-sm px-2 py-0.5 rounded">
+              36-HR RIGGING RIGOR
+            </div>
+</div>
+<div class="grid grid-cols-3 bg-surface-container-low p-space-md text-center gap-space-xs">
+<div class="flex flex-col">
+<span class="font-label-mono-sm text-label-mono-sm text-secondary uppercase">Gross Area</span>
+<span class="font-headline-sm text-body-md text-on-surface font-semibold">185,000 SQ FT</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-mono-sm text-label-mono-sm text-secondary uppercase">Delivered Load</span>
+<span class="font-headline-sm text-body-md text-on-surface font-semibold">160 TONS</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-mono-sm text-label-mono-sm text-secondary uppercase">Sound Decibels</span>
+<span class="font-headline-sm text-body-md text-primary-container font-semibold">NC-35 COMPLIANT</span>
+</div>
+</div>
+<div class="p-space-lg flex flex-col justify-between flex-1 gap-space-md">
+<div class="flex flex-col gap-1">
+<span class="font-label-mono-sm text-label-mono-sm text-secondary uppercase">Equip Schedule</span>
+<p class="font-body-sm text-body-sm text-on-surface">4x 40-ton high-efficiency rooftop units, custom seismic structural curbs, modulating economizers.</p>
+</div>
+<a class="inline-flex items-center justify-between text-on-surface hover:text-primary-container font-button-text text-button-text pt-space-sm transition-colors" href="#">
+<span>View Submittal &amp; Performance Data</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Case 04: Oakridge High School -->
+<article class="project-dossier bg-surface-container-lowest rounded-xl flex flex-col overflow-hidden shadow-sm hover:shadow-md transition-all duration-200" data-sector="education">
+<div class="p-space-lg flex flex-col gap-space-sm bg-surface-container-lowest">
+<div class="flex items-center justify-between">
+<span class="font-label-mono-sm text-label-mono-sm text-secondary">CINCINNATI, OH • 2023</span>
+<span class="font-label-technical text-label-technical text-primary-container bg-surface-container-low px-2 py-0.5 rounded">EDUCATION / DOAS</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface uppercase">Oakridge Campus Hydronic Boiler Retrofit</h3>
+<p class="font-body-sm text-body-sm text-secondary">
+              Conversion of aging steam loop to ultra-low NOx condensing hydronic heating with dedicated outdoor air systems across 62 classrooms.
+            </p>
+</div>
+<div class="relative w-full h-52 bg-surface-container overflow-hidden group">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Compact stainless steel condensing boilers with digital flame controllers and red painted isolation valves in a clean engineering boiler plant." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkDrR_Ecl8SLpNE8YlN_262a9d5Kh3I87GluHx9HBWJSfH8iE40WUVtbvn3Lb1n6QNQJuuJYlqIzRti8Ljv9v0OMGCJqq5MPKHUVaodyiVaUnl4NcLEm44TRgd3MoOa9Iy6JPhu_ywvlDjlFRf58ER4_7lTz8QroJrE2X6kF20IAkgivmb6W0DGTy1IAnq0uSogtvaVKQfbnrwgToPaA8KJz-T4U_mLFcTzY_nmt4DDN7PhImyWgyziQ"/>
+<div class="absolute bottom-2 left-2 bg-on-surface/90 text-surface-container-lowest font-label-mono-sm text-label-mono-sm px-2 py-0.5 rounded">
+              96.4% THERMAL EFFICIENCY
+            </div>
+</div>
+<div class="grid grid-cols-3 bg-surface-container-low p-space-md text-center gap-space-xs">
+<div class="flex flex-col">
+<span class="font-label-mono-sm text-label-mono-sm text-secondary uppercase">Hydronic Rating</span>
+<span class="font-headline-sm text-body-md text-on-surface font-semibold">9.0M BTU/HR</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-mono-sm text-label-mono-sm text-secondary uppercase">Fresh Air CFM</span>
+<span class="font-headline-sm text-body-md text-on-surface font-semibold">48,000 CFM</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-mono-sm text-label-mono-sm text-secondary uppercase">Verified Fuel</span>
+<span class="font-headline-sm text-body-md text-primary-container font-semibold">-34% THERMS</span>
+</div>
+</div>
+<div class="p-space-lg flex flex-col justify-between flex-1 gap-space-md">
+<div class="flex flex-col gap-1">
+<span class="font-label-mono-sm text-label-mono-sm text-secondary uppercase">Equip Schedule</span>
+<p class="font-body-sm text-body-sm text-on-surface">3x 3000 MBH condensing boilers, 32 energy recovery DOAS ventilators, BACnet classroom CO2 sensors.</p>
+</div>
+<a class="inline-flex items-center justify-between text-on-surface hover:text-primary-container font-button-text text-button-text pt-space-sm transition-colors" href="#">
+<span>View Submittal &amp; Performance Data</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Case 05: Foundry Precision Machining -->
+<article class="project-dossier bg-surface-container-lowest rounded-xl flex flex-col overflow-hidden shadow-sm hover:shadow-md transition-all duration-200" data-sector="industrial">
+<div class="p-space-lg flex flex-col gap-space-sm bg-surface-container-lowest">
+<div class="flex items-center justify-between">
+<span class="font-label-mono-sm text-label-mono-sm text-secondary">DAYTON, OH • 2024</span>
+<span class="font-label-technical text-label-technical text-primary-container bg-surface-container-low px-2 py-0.5 rounded">INDUSTRIAL / CNC</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface uppercase">Foundry Precision CNC Thermal Containment</h3>
+<p class="font-body-sm text-body-sm text-secondary">
+              Strict ±1°F temperature stabilization and aerosol oil-mist filtration for high-tolerance defense aerospace manufacturing bays.
+            </p>
+</div>
+<div class="relative w-full h-52 bg-surface-container overflow-hidden group">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Industrial air filtration manifolds and stainless overhead HVAC ductwork inside an immaculate aerospace CNC machine workshop with epoxy flooring." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIR0JMakBsqv47rVa5PxTlmCJ_boBLf4p6S5sW7sNaNrPzYru4NSC8VFjzSDDFGQAKLhKjE-zXTt7le2eu2i5vFt2Bh2zn0QH7N9kHZH8-FZTpjkFZFufa0fHmc31DU9KDvJkaR7hGCIe9WGRVcTeyOx6hRpqxdk7lo7qDTQwDp0Zt4bOoqKdMC3mobAOmSvTkgug1LF_OQXxEx7HVi73eQq8AO6UNyAeb_AIrgfKYZyDC9Aq__sW_tQ"/>
+<div class="absolute bottom-2 left-2 bg-on-surface/90 text-surface-container-lowest font-label-mono-sm text-label-mono-sm px-2 py-0.5 rounded">
+              ISO CLASS 8 COMPLIANT
+            </div>
+</div>
+<div class="grid grid-cols-3 bg-surface-container-low p-space-md text-center gap-space-xs">
+<div class="flex flex-col">
+<span class="font-label-mono-sm text-label-mono-sm text-secondary uppercase">Tolerance</span>
+<span class="font-headline-sm text-body-md text-on-surface font-semibold">±1.0°F CONST</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-mono-sm text-label-mono-sm text-secondary uppercase">Filtration</span>
+<span class="font-headline-sm text-body-md text-on-surface font-semibold">MERV 16 + MIST</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-mono-sm text-label-mono-sm text-secondary uppercase">Uptime Score</span>
+<span class="font-headline-sm text-body-md text-primary-container font-semibold">99.98%</span>
+</div>
+</div>
+<div class="p-space-lg flex flex-col justify-between flex-1 gap-space-md">
+<div class="flex flex-col gap-1">
+<span class="font-label-mono-sm text-label-mono-sm text-secondary uppercase">Equip Schedule</span>
+<p class="font-body-sm text-body-sm text-on-surface">Constant volume air handlers, centrifugal mist eliminators, modulated chilled water coils.</p>
+</div>
+<a class="inline-flex items-center justify-between text-on-surface hover:text-primary-container font-button-text text-button-text pt-space-sm transition-colors" href="#">
+<span>View Submittal &amp; Performance Data</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Case 06: The Grand Marquis Hotel -->
+<article class="project-dossier bg-surface-container-lowest rounded-xl flex flex-col overflow-hidden shadow-sm hover:shadow-md transition-all duration-200" data-sector="hospitality">
+<div class="p-space-lg flex flex-col gap-space-sm bg-surface-container-lowest">
+<div class="flex items-center justify-between">
+<span class="font-label-mono-sm text-label-mono-sm text-secondary">NASHVILLE, TN • 2023</span>
+<span class="font-label-technical text-label-technical text-primary-container bg-surface-container-low px-2 py-0.5 rounded">HOSPITALITY / LUXURY</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface uppercase">The Grand Marquis 4-Pipe Fan Coil Overhaul</h3>
+<p class="font-body-sm text-body-sm text-secondary">
+              Acoustic optimization and discrete vertical stack replacement across 180 luxury keys without guest corridor disruption.
+            </p>
+</div>
+<div class="relative w-full h-52 bg-surface-container overflow-hidden group">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Architectural linear slot diffusers integrated seamlessly into a high-end luxury hotel guest room ceiling trim with warm contemporary lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBR4NgPMr41QkgFNZNmyTfRUvvwxH4JSacfFYzxxxu-T5TTRebVsST-vvthzvpZzpocdL5jdqtlKOPjZK0Y5E71QTU6t8Vsfs8m2SsAJqwf5GthwdMk44tOxbHg3qbVRNyqTTKooEdkl8j_LjnB6_4JIlPu2EOH3J8DdMcfxCiBWE4TuPBt-rDjFeN_44vY9fEF6uGtZFEmAlTAFUsF9j17Xms0V1zZu9-TAZDyxGHrhYk5X27E-9RY0A"/>
+<div class="absolute bottom-2 left-2 bg-on-surface/90 text-surface-container-lowest font-label-mono-sm text-label-mono-sm px-2 py-0.5 rounded">
+              NC-28 ACOUSTIC VERIFIED
+            </div>
+</div>
+<div class="grid grid-cols-3 bg-surface-container-low p-space-md text-center gap-space-xs">
+<div class="flex flex-col">
+<span class="font-label-mono-sm text-label-mono-sm text-secondary uppercase">Guest Keys</span>
+<span class="font-headline-sm text-body-md text-on-surface font-semibold">180 UNITS</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-mono-sm text-label-mono-sm text-secondary uppercase">Acoustics</span>
+<span class="font-headline-sm text-body-md text-on-surface font-semibold">NC-28 DB</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-mono-sm text-label-mono-sm text-secondary uppercase">Peak Demand</span>
+<span class="font-headline-sm text-body-md text-primary-container font-semibold">-19.2% KW</span>
+</div>
+</div>
+<div class="p-space-lg flex flex-col justify-between flex-1 gap-space-md">
+<div class="flex flex-col gap-1">
+<span class="font-label-mono-sm text-label-mono-sm text-secondary uppercase">Equip Schedule</span>
+<p class="font-body-sm text-body-sm text-on-surface">180 custom vertical fan coils with ECM motors, acoustic attenuated plenums, networked thermostats.</p>
+</div>
+<a class="inline-flex items-center justify-between text-on-surface hover:text-primary-container font-button-text text-button-text pt-space-sm transition-colors" href="#">
+<span>View Submittal &amp; Performance Data</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Case 07: BioVance Research Lab -->
+<article class="project-dossier bg-surface-container-lowest rounded-xl flex flex-col overflow-hidden shadow-sm hover:shadow-md transition-all duration-200" data-sector="healthcare">
+<div class="p-space-lg flex flex-col gap-space-sm bg-surface-container-lowest">
+<div class="flex items-center justify-between">
+<span class="font-label-mono-sm text-label-mono-sm text-secondary">LEXINGTON, KY • 2024</span>
+<span class="font-label-technical text-label-technical text-primary-container bg-surface-container-low px-2 py-0.5 rounded">HEALTHCARE / BSL-3</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface uppercase">BioVance Cleanroom Dynamic Pressurization</h3>
+<p class="font-body-sm text-body-sm text-secondary">
+              Cascade differential pressure maintenance using high-speed venturi control valves for containment and biosafety isolation.
+            </p>
+</div>
+<div class="relative w-full h-52 bg-surface-container overflow-hidden group">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Stainless steel pharmaceutical cleanroom suite with ceiling HEPA fan filter units, digital room differential pressure displays and airlock doors." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAXdampF4VWJkbK7F4_tCKNM2bWHxfXWQnJINANYuOEbZGRT1nf2Bu7qqNXlQsGF8rnMSZ1nV6D8b0Q95RwKmI_u-RMvr8g7nXxTFfEeF9OcudQRzWGTOPT8ys3eUyn9caA8uIpRVs_C3gqKcLOCTet7vETQ0jrnFTWgbI1bbG4uelURI8jdm0ooTrIe21GB4qgEhvZZqVt7sUeKTHGkO6F_WpnMb5aJw3gg-it_kwCSBJq9Igzh1eAtQ"/>
+<div class="absolute bottom-2 left-2 bg-on-surface/90 text-surface-container-lowest font-label-mono-sm text-label-mono-sm px-2 py-0.5 rounded">
+              BSL-3 CERTIFIED SEAL
+            </div>
+</div>
+<div class="grid grid-cols-3 bg-surface-container-low p-space-md text-center gap-space-xs">
+<div class="flex flex-col">
+<span class="font-label-mono-sm text-label-mono-sm text-secondary uppercase">Valves Actuated</span>
+<span class="font-headline-sm text-body-md text-on-surface font-semibold">28 VENTURI</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-mono-sm text-label-mono-sm text-secondary uppercase">Diff Pressure</span>
+<span class="font-headline-sm text-body-md text-on-surface font-semibold">±0.02" WG</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-mono-sm text-label-mono-sm text-secondary uppercase">Response Time</span>
+<span class="font-headline-sm text-body-md text-primary-container font-semibold">&lt; 1.0 SEC</span>
+</div>
+</div>
+<div class="p-space-lg flex flex-col justify-between flex-1 gap-space-md">
+<div class="flex flex-col gap-1">
+<span class="font-label-mono-sm text-label-mono-sm text-secondary uppercase">Equip Schedule</span>
+<p class="font-body-sm text-body-sm text-on-surface">Phoenix venturi valves, safe-change bag-in/bag-out HEPA housings, dual emergency exhaust blowers.</p>
+</div>
+<a class="inline-flex items-center justify-between text-on-surface hover:text-primary-container font-button-text text-button-text pt-space-sm transition-colors" href="#">
+<span>View Submittal &amp; Performance Data</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Case 08: Crossdock Cold Storage -->
+<article class="project-dossier bg-surface-container-lowest rounded-xl flex flex-col overflow-hidden shadow-sm hover:shadow-md transition-all duration-200" data-sector="coldstorage">
+<div class="p-space-lg flex flex-col gap-space-sm bg-surface-container-lowest">
+<div class="flex items-center justify-between">
+<span class="font-label-mono-sm text-label-mono-sm text-secondary">FORT WAYNE, IN • 2024</span>
+<span class="font-label-technical text-label-technical text-primary-container bg-surface-container-low px-2 py-0.5 rounded">COLD CHAIN STORAGE</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface uppercase">Crossdock Regional Low-GWP Refrigeration</h3>
+<p class="font-body-sm text-body-sm text-secondary">
+              Transcritical CO2 refrigeration system deployment sustaining precise 32°F to -10°F dual zones with zero batch food spoilage.
+            </p>
+</div>
+<div class="relative w-full h-52 bg-surface-container overflow-hidden group">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Industrial low-temperature refrigeration rack system with copper and steel manifolds, high-pressure relief valves, and digital diagnostic gauges." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAg8-skGWSXk0rYKdDilc3Zu5Xi_6A0NoVVsTD82Ewmxa8Pmmc1Avl3rK5CojivOZd6Djx85yQSpc8pB6_lDXdvJhygfqGCv00CEF67ZD1avIleCEb7wklcFc0-w3D1FSTebKYelKpKfeSUrnZei_fWcpFa7B-21aTwyuhx7T9F6IClbviuSx3TSQsV5h_j8bFwoAbRdy8eConGDtyOvs2omavD7MoOpwF12vzmuV_rcM13oFOgL97ipA"/>
+<div class="absolute bottom-2 left-2 bg-on-surface/90 text-surface-container-lowest font-label-mono-sm text-label-mono-sm px-2 py-0.5 rounded">
+              CO2 TRANSCRITICAL R-744
+            </div>
+</div>
+<div class="grid grid-cols-3 bg-surface-container-low p-space-md text-center gap-space-xs">
+<div class="flex flex-col">
+<span class="font-label-mono-sm text-label-mono-sm text-secondary uppercase">Cold Chamber</span>
+<span class="font-headline-sm text-body-md text-on-surface font-semibold">120,000 SQ FT</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-mono-sm text-label-mono-sm text-secondary uppercase">Core Setpoint</span>
+<span class="font-headline-sm text-body-md text-on-surface font-semibold">-10°F LOW</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-mono-sm text-label-mono-sm text-secondary uppercase">GWP Factor</span>
+<span class="font-headline-sm text-body-md text-primary-container font-semibold">1.0 (NET LOW)</span>
+</div>
+</div>
+<div class="p-space-lg flex flex-col justify-between flex-1 gap-space-md">
+<div class="flex flex-col gap-1">
+<span class="font-label-mono-sm text-label-mono-sm text-secondary uppercase">Equip Schedule</span>
+<p class="font-body-sm text-body-sm text-on-surface">Transcritical rack assembly, electronic expansion valves, adiabatic gas cooler, IoT telemetry.</p>
+</div>
+<a class="inline-flex items-center justify-between text-on-surface hover:text-primary-container font-button-text text-button-text pt-space-sm transition-colors" href="#">
+<span>View Submittal &amp; Performance Data</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+</article>
+</div>
+</div>
+</section>
+<!-- Technical Verification Process Micro-Band -->
+<section class="w-full bg-surface-container-lowest px-margin lg:px-margin-desktop py-space-xl">
+<div class="max-w-[1320px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop">
+<div class="lg:col-span-4 flex flex-col gap-space-xs">
+<span class="font-label-technical text-label-technical uppercase text-primary-container tracking-widest">TESTING &amp; BALANCING</span>
+<h2 class="font-headline-md text-headline-md text-on-surface uppercase">Our Commissioning Benchmark</h2>
+<p class="font-body-md text-body-md text-secondary mt-space-xs">
+          Vertex Solutions does not sign off on calculated projections. Every case study requires NEBB-certified air and hydronic testing with verified data-logger logs.
+        </p>
+</div>
+<div class="lg:col-span-8 grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<div class="bg-surface-container-low p-space-lg rounded-xl flex flex-col gap-space-xs">
+<div class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center font-label-mono-sm text-label-mono-sm font-bold text-on-surface">01</div>
+<h4 class="font-headline-sm text-body-lg text-on-surface font-semibold uppercase mt-space-xs">Calibrated Air &amp; Flow TAB</h4>
+<p class="font-body-sm text-body-sm text-secondary">
+            Pitot traverse duct airflow confirmation and ultrasonic hydronic flow rate verification within ±2.5% of design spec.
+          </p>
+</div>
+<div class="bg-surface-container-low p-space-lg rounded-xl flex flex-col gap-space-xs">
+<div class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center font-label-mono-sm text-label-mono-sm font-bold text-on-surface">02</div>
+<h4 class="font-headline-sm text-body-lg text-on-surface font-semibold uppercase mt-space-xs">Load Trend Telemetry</h4>
+<p class="font-body-sm text-body-sm text-secondary">
+            Continuous 30-day BACnet trend logging across peak cooling days to confirm chiller staging and delta-T efficiency.
+          </p>
+</div>
+<div class="bg-surface-container-low p-space-lg rounded-xl flex flex-col gap-space-xs">
+<div class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center font-label-mono-sm text-label-mono-sm font-bold text-on-surface">03</div>
+<h4 class="font-headline-sm text-body-lg text-on-surface font-semibold uppercase mt-space-xs">ASHRAE 90.1 Sign-Off</h4>
+<p class="font-body-sm text-body-sm text-secondary">
+            Full compliance certificate stamped by our in-house licensed Professional Engineers (PE) for utility rebate approval.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Bottom Blueprint & RFP Submittal Review Banner -->
+<section class="w-full bg-surface-container-highest px-margin lg:px-margin-desktop py-space-xl">
+<div class="max-w-[1320px] mx-auto bg-surface-container-lowest rounded-xl p-space-xl shadow-sm">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop items-center">
+<div class="lg:col-span-8 flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<span class="font-label-technical text-label-technical uppercase tracking-widest text-primary-container">MECHANICAL ENGINEERING ADVISORY</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-on-surface uppercase tracking-tight">
+            Have a facility blueprint or chiller replacement in planning?
+          </h3>
+<p class="font-body-md text-body-md text-secondary max-w-2xl">
+            Consult directly with a licensed mechanical project engineer for submittal review, equipment scheduling, and guaranteed 48-hour turnarounds on mechanical bid assessments.
+          </p>
+<div class="flex flex-wrap items-center gap-space-md pt-space-xs font-label-mono-sm text-label-mono-sm text-secondary">
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-on-surface">verified</span> PE Stamped Reviews</span>
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-on-surface">speed</span> 48hr Submittal Triage</span>
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-on-surface">precision_manufacturing</span> Equipment Lifecycle Models</span>
+</div>
+</div>
+<div class="lg:col-span-4 flex flex-col sm:flex-row lg:flex-col gap-space-md justify-end">
+<a class="bg-primary-container hover:bg-primary text-on-primary font-button-text text-button-text px-space-md py-3 rounded-lg transition-colors flex items-center justify-center gap-space-xs text-center shadow-sm" href="#">
+<span class="material-symbols-outlined text-[18px]">upload_file</span>
+<span>Submit Project Blueprint / RFP</span>
+</a>
+<a class="bg-surface-container-low hover:bg-surface-container-high text-on-surface font-button-text text-button-text px-space-md py-3 rounded-lg transition-colors flex items-center justify-center gap-space-xs text-center" href="tel:8005550194">
+<span class="material-symbols-outlined text-[18px]">support_agent</span>
+<span>Direct Dispatch: (800) 555-0194</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+</div>
+<script>
+  // Technical Filtering Micro-interaction
+  document.addEventListener('DOMContentLoaded', () => {
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const projectCards = document.querySelectorAll('.project-dossier');
+    const statusText = document.getElementById('registry-status');
+
+    filterButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const filter = btn.getAttribute('data-filter');
+
+        // Toggle button styling states
+        filterButtons.forEach(b => {
+          b.classList.remove('bg-on-surface', 'text-surface-container-lowest', 'active-filter');
+          b.classList.add('bg-surface-container-low', 'text-secondary');
+          const badge = b.querySelector('span:last-child');
+          if (badge) {
+            badge.classList.remove('bg-surface-container-lowest', 'text-on-surface');
+            badge.classList.add('text-secondary');
+          }
+        });
+
+        btn.classList.add('bg-on-surface', 'text-surface-container-lowest', 'active-filter');
+        btn.classList.remove('bg-surface-container-low', 'text-secondary');
+        const activeBadge = btn.querySelector('span:last-child');
+        if (activeBadge) {
+          activeBadge.classList.add('bg-surface-container-lowest', 'text-on-surface');
+          activeBadge.classList.remove('text-secondary');
+        }
+
+        // Filter projects
+        let visibleCount = 0;
+        projectCards.forEach(card => {
+          const cardSector = card.getAttribute('data-sector');
+          if (filter === 'all' || cardSector === filter) {
+            card.classList.remove('hidden');
+            visibleCount++;
+          } else {
+            card.classList.add('hidden');
+          }
+        });
+
+        if (statusText) {
+          statusText.textContent = `DISPLAYING ${visibleCount} COMMISSIONED FIELD ${visibleCount === 1 ? 'LOG' : 'LOGS'}`;
+        }
+      });
+    });
+  });
+</script></main><footer class="w-full bg-inverse-surface text-inverse-on-surface border-t border-surface-container-high"><div class="max-w-[1320px] mx-auto px-margin lg:px-margin-desktop py-space-xl"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter-desktop"><div class="flex flex-col gap-space-sm"><div class="flex items-center gap-space-sm mb-space-xs"><img alt="Vertex Solutions Clean Vector Logo" class="h-7 w-auto object-contain brightness-0 invert" src="https://lh3.googleusercontent.com/aida/AEtjO1X27bRqdcNiUeB0pb_hPPkOuwnVSIjn6iEbuL3_TwkKW_oM6ieJuds08YRDyBkKaOusCOpRkK0hOFpd79vdp3gylb2BvKjMCAnvS-LzBJ060rE5LgvPdbhUfGT9b8mqqvfRUpuiUaPcJUErQXRnCeomcgSRZRN3t19EZ56dg9xyNk7cB4XXL3iDTgoJU-aZMZQ7l_0R6DwGBzK7k_T85k3WTleTm0eR_E6A1Gz8K9rah5qRno0eLCDCeSo"/><span class="font-headline-sm text-headline-sm text-inverse-on-surface">VERTEX</span></div><p class="font-body-sm text-body-sm text-surface-dim">High-performance commercial mechanical engineering, chillers, automated controls, and critical infrastructure lifecycle maintenance.</p><div class="font-label-mono-sm text-label-mono-sm text-surface-dim mt-space-sm">HQ: 4200 Precision Way, Suite 800<br/>Indianapolis, IN 46240<br/>Direct: (800) 555-0194</div></div><div class="flex flex-col gap-space-xs"><span class="font-label-technical text-label-technical uppercase tracking-widest text-surface-container mb-space-sm">Mechanical Services</span><a class="font-body-sm text-body-sm text-surface-dim hover:text-inverse-on-surface transition-colors" href="#">Centrifugal &amp; Screw Chillers</a><a class="font-body-sm text-body-sm text-surface-dim hover:text-inverse-on-surface transition-colors" href="#">Industrial Boilers &amp; Hydronics</a><a class="font-body-sm text-body-sm text-surface-dim hover:text-inverse-on-surface transition-colors" href="#">Variable Refrigerant Flow (VRF)</a><a class="font-body-sm text-body-sm text-surface-dim hover:text-inverse-on-surface transition-colors" href="#">Building Automation &amp; BACnet</a><a class="font-body-sm text-body-sm text-surface-dim hover:text-inverse-on-surface transition-colors" href="#">Critical Cleanroom Ventilation</a></div><div class="flex flex-col gap-space-xs"><span class="font-label-technical text-label-technical uppercase tracking-widest text-surface-container mb-space-sm">Engineering Specs</span><a class="font-body-sm text-body-sm text-surface-dim hover:text-inverse-on-surface transition-colors" href="#">ASHRAE Standard 90.1 Compliance</a><a class="font-body-sm text-body-sm text-surface-dim hover:text-inverse-on-surface transition-colors" href="#">BIM &amp; Revit Fabrication Models</a><a class="font-body-sm text-body-sm text-surface-dim hover:text-inverse-on-surface transition-colors" href="#">NEBB Certified Air &amp; Hydronic TAB</a><a class="font-body-sm text-body-sm text-surface-dim hover:text-inverse-on-surface transition-colors" href="#">Predictive Vibration Telemetry</a><a class="font-body-sm text-body-sm text-surface-dim hover:text-inverse-on-surface transition-colors" href="#">Decarbonization &amp; Heat Recovery</a></div><div class="flex flex-col gap-space-sm"><span class="font-label-technical text-label-technical uppercase tracking-widest text-surface-container mb-space-xs">Regional Coverage &amp; Specs</span><p class="font-body-sm text-body-sm text-surface-dim">Dedicated engineering dispatch across Indiana, Ohio, and Kentucky with guaranteed 2-hour Tier-1 uptime SLAs.</p><div class="flex flex-wrap gap-1.5 pt-space-xs"><span class="font-label-mono-sm text-label-mono-sm bg-tertiary px-2 py-0.5 rounded text-surface-bright">ASHRAE 90.1</span><span class="font-label-mono-sm text-label-mono-sm bg-tertiary px-2 py-0.5 rounded text-surface-bright">NEBB TAB</span><span class="font-label-mono-sm text-label-mono-sm bg-tertiary px-2 py-0.5 rounded text-surface-bright">OSHA 30</span><span class="font-label-mono-sm text-label-mono-sm bg-tertiary px-2 py-0.5 rounded text-surface-bright">EPA UNIVERSAL</span></div></div></div><div class="mt-space-xl pt-space-md border-t border-tertiary-container flex flex-col md:flex-row items-center justify-between gap-space-sm text-surface-dim font-label-mono-sm text-label-mono-sm"><div>© 2024 Vertex Solutions Mechanical Engineering Corporation. All rights reserved.</div><div class="flex items-center gap-space-md"><a class="hover:text-inverse-on-surface transition-colors" href="#">Safety Protocols</a><a class="hover:text-inverse-on-surface transition-colors" href="#">Engineering Licensing</a><a class="hover:text-inverse-on-surface transition-colors" href="#">Privacy Statement</a></div></div></div></footer></body></html>

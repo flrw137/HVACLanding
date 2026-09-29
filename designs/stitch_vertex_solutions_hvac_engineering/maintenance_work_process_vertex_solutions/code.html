@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;family=Space+Grotesk:wght@600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-primary-fixed-variant":"#92001c","tertiary-fixed-dim":"#bfc7d5","surface-container-low":"#f3f4f5","inverse-primary":"#ffb3b1","error-container":"#ffdad6","on-error-container":"#93000a","surface-container-lowest":"#ffffff","primary-fixed-dim":"#ffb3b1","inverse-surface":"#2e3132","primary-fixed":"#ffdad8","background":"#f8f9fa","surface-bright":"#f8f9fa","on-error":"#ffffff","on-secondary-container":"#636467","on-surface-variant":"#5c403f","secondary-fixed":"#e2e2e5","surface-container-high":"#e7e8e9","surface-dim":"#d9dadb","surface-variant":"#e1e3e4","on-tertiary-fixed-variant":"#3f4753","surface-tint":"#bf0229","inverse-on-surface":"#f0f1f2","on-background":"#191c1d","tertiary":"#454d59","secondary-container":"#e2e2e5","tertiary-fixed":"#dbe3f1","on-primary-container":"#ffdad8","on-tertiary-fixed":"#141c26","on-tertiary":"#ffffff","on-primary-fixed":"#410007","tertiary-container":"#5d6571","on-secondary":"#ffffff","surface-container":"#edeeef","on-tertiary-container":"#dbe3f1","secondary":"#5d5e61","outline-variant":"#e5bdbb","surface":"#f8f9fa","surface-container-highest":"#e1e3e4","outline":"#906f6e","on-primary":"#ffffff","on-secondary-fixed":"#1a1c1e","secondary-fixed-dim":"#c6c6c9","on-secondary-fixed-variant":"#454749","error":"#ba1a1a","primary-container":"#c8102e","primary":"#9e001f","on-surface":"#191c1d"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"space-md":"1rem","gutter-desktop":"2rem","margin-desktop":"3rem","space-xs":"0.25rem","margin-tablet":"2rem","gutter":"1.5rem","space-xl":"2.5rem","space-sm":"0.5rem","space-lg":"1.5rem","margin":"1rem"},"fontFamily":{"headline-lg":["Space Grotesk"],"display-xl":["Space Grotesk"],"body-md":["Inter"],"body-sm":["Inter"],"label-mono-sm":["JetBrains Mono"],"headline-lg-mobile":["Space Grotesk"],"label-technical":["JetBrains Mono"],"headline-sm":["Space Grotesk"],"headline-md":["Space Grotesk"],"body-lg":["Inter"],"display-xl-mobile":["Space Grotesk"],"button-text":["Inter"]},"fontSize":{"headline-lg":["40px",{"lineHeight":"48px","letterSpacing":"-0.01em","fontWeight":"600"}],"display-xl":["56px",{"lineHeight":"64px","letterSpacing":"-0.02em","fontWeight":"600"}],"body-md":["15px",{"lineHeight":"25px","letterSpacing":"0","fontWeight":"400"}],"body-sm":["13px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"400"}],"label-mono-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.04em","fontWeight":"400"}],"headline-lg-mobile":["28px",{"lineHeight":"36px","letterSpacing":"0","fontWeight":"600"}],"label-technical":["12px",{"lineHeight":"16px","letterSpacing":"0.06em","fontWeight":"500"}],"headline-sm":["20px",{"lineHeight":"28px","letterSpacing":"0","fontWeight":"600"}],"headline-md":["28px",{"lineHeight":"36px","letterSpacing":"-0.005em","fontWeight":"600"}],"body-lg":["18px",{"lineHeight":"30px","letterSpacing":"0","fontWeight":"400"}],"display-xl-mobile":["36px",{"lineHeight":"44px","letterSpacing":"-0.01em","fontWeight":"600"}],"button-text":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"600"}]}}}}</script></head><body class="bg-surface-container-lowest text-on-surface font-body-md text-body-md antialiased"><header class="fixed top-0 left-0 w-full z-50 bg-surface-container-lowest border-b border-surface-container-high"><div class="h-8 w-full bg-surface-container-low border-b border-surface-container-high px-margin lg:px-margin-desktop"><div class="max-w-[1320px] mx-auto h-full flex items-center justify-between font-label-mono-sm text-label-mono-sm text-secondary"><div class="flex items-center gap-space-sm"><span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span><span>Midwest Regional Engineering (IN · OH · KY) • Lic #HVAC-MECH-48209</span></div><div class="flex items-center gap-space-md"><span class="hidden sm:inline">24/7 Commercial Dispatch:</span><a class="font-label-technical text-label-technical text-on-surface hover:text-primary transition-colors font-medium" href="tel:8005550194">(800) 555-0194</a></div></div></div><div class="h-[72px] max-w-[1320px] mx-auto px-margin lg:px-margin-desktop flex items-center justify-between"><div class="flex items-center gap-space-md"><img alt="Vertex Solutions Clean Vector Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1X27bRqdcNiUeB0pb_hPPkOuwnVSIjn6iEbuL3_TwkKW_oM6ieJuds08YRDyBkKaOusCOpRkK0hOFpd79vdp3gylb2BvKjMCAnvS-LzBJ060rE5LgvPdbhUfGT9b8mqqvfRUpuiUaPcJUErQXRnCeomcgSRZRN3t19EZ56dg9xyNk7cB4XXL3iDTgoJU-aZMZQ7l_0R6DwGBzK7k_T85k3WTleTm0eR_E6A1Gz8K9rah5qRno0eLCDCeSo"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm uppercase tracking-tight text-on-surface leading-none">Vertex Solutions</span><span class="font-label-mono-sm text-label-mono-sm text-secondary uppercase tracking-widest">Mechanical &amp; Industrial HVAC</span></div></div><nav class="hidden lg:flex items-center gap-space-lg h-full" data-active-classes="text-on-surface border-b-2 border-primary-container font-semibold"><a class="text-secondary hover:text-on-surface font-button-text text-button-text h-full inline-flex items-center border-b-2 border-transparent transition-colors" data-path="overview" href="#">Overview</a><a class="text-secondary hover:text-on-surface font-button-text text-button-text h-full inline-flex items-center border-b-2 border-transparent transition-colors" data-path="services" href="#">Services</a><a class="text-secondary hover:text-on-surface font-button-text text-button-text h-full inline-flex items-center border-b-2 border-transparent transition-colors" data-path="case-studies" href="#">Case Studies</a><a aria-current="page" class="h-full inline-flex items-center transition-colors text-on-surface border-b-2 border-primary-container font-semibold" data-path="maintenance-process" href="#">Maintenance Process</a><a class="text-secondary hover:text-on-surface font-button-text text-button-text h-full inline-flex items-center border-b-2 border-transparent transition-colors" data-path="company-and-trust" href="#">Company &amp; Trust</a></nav><div class="flex items-center gap-space-md"><a class="hidden xl:flex items-center gap-space-xs text-secondary hover:text-on-surface font-button-text text-button-text transition-colors" href="tel:8005550194"><span class="material-symbols-outlined text-[18px]">call</span><span>(800) 555-0194</span></a><a class="bg-primary-container hover:bg-primary text-on-primary font-button-text text-button-text px-space-md py-2.5 rounded-lg transition-colors flex items-center justify-center shadow-none" data-path="request-consultation" href="#">Request Consultation</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-[104px] bg-surface-container-lowest"><div class="flex flex-col w-full">
+<!-- Top Progress & Technical Metric Band -->
+<div class="w-full bg-surface-container-low border-b border-surface-container-high py-space-sm px-margin lg:px-margin-desktop">
+<div class="max-w-[1320px] mx-auto flex flex-wrap items-center justify-between gap-space-sm text-secondary font-label-mono-sm text-label-mono-sm">
+<div class="flex items-center gap-space-md">
+<span class="inline-flex items-center gap-1.5 font-medium text-on-surface">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
+          ACTIVE PROTOCOL: DOC-ENG-901B
+        </span>
+<span class="hidden md:inline text-surface-container-highest">|</span>
+<span class="hidden md:inline">SYSTEM BALANCING TOLERANCE: ±2.5% ASHRAE 111</span>
+</div>
+<div class="flex items-center gap-space-lg">
+<span>CURRENT MEAN DISPATCH: <strong class="text-on-surface font-semibold">41 MIN</strong></span>
+<span>PEAK MTBF FACTOR: <strong class="text-on-surface font-semibold">99.98%</strong></span>
+</div>
+</div>
+</div>
+<!-- Editorial Section Header -->
+<section class="w-full bg-surface-container-lowest pt-16 pb-12 lg:pt-20 lg:pb-16 px-margin lg:px-margin-desktop">
+<div class="max-w-[1320px] mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop items-end">
+<div class="lg:col-span-8 flex flex-col gap-space-sm">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 bg-primary-container"></span>
+<span class="font-label-technical text-label-technical text-primary-container uppercase tracking-widest">
+              Process &amp; Preventive Maintenance
+            </span>
+</div>
+<h1 class="font-display-xl text-display-xl text-on-surface tracking-tight mt-2">
+            A Structured Mechanical Process from First Site Visit to Final Balance.
+          </h1>
+<p class="font-body-lg text-body-lg text-secondary max-w-3xl mt-2 leading-relaxed">
+            We execute commercial HVAC service through a transparent six-step methodology that eliminates guesswork, avoids change orders, and protects critical facility uptime across enterprise plants.
+          </p>
+</div>
+<div class="lg:col-span-4 flex flex-col justify-end lg:items-end gap-space-md pb-2">
+<div class="flex items-center gap-space-xs bg-surface-container-low px-4 py-2.5 rounded-lg border border-surface-container-high w-full sm:w-auto">
+<span class="material-symbols-outlined text-primary-container text-[20px]">verified</span>
+<span class="font-label-technical text-label-technical text-on-surface">NEBB Certified Field Procedures</span>
+</div>
+<p class="font-label-mono-sm text-label-mono-sm text-secondary text-right hidden sm:block">
+            Mechanical SLA Compliance: 100% Guaranteed Fixed Scope
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Process Pipeline Visual & Gallery Row -->
+<section class="w-full bg-surface-container-lowest pb-16 px-margin lg:px-margin-desktop">
+<div class="max-w-[1320px] mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter-desktop mb-14">
+<div class="group relative rounded-xl overflow-hidden bg-surface-container border border-surface-container-high flex flex-col">
+<div class="h-56 w-full overflow-hidden bg-surface-dim">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Modern precision hydronic heating plant with insulated industrial boilers, digital temperature dials, and polished stainless steel pipework in a sterile engineering room with bright architectural lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDaU4xhdhHKaqT9Oln-QV7_UWvK3IiD1GIyqJqChqeM_5DwqaAdLVjJBWotIZjU9J6a_tbLAwdaM1rh2DPKl53p6YNw7eVlbL1pRWIyuWDjz_Cs6dmXMMBesbpsXjjMynbBGvlpbcHxllomBB0gp7WXdQBuAL7ND1HAD8lxh80UtdfKYuFYc7wXegmw7e3skwApGp9C7KyHZPmU9eUL805lwkK8TP6hEM0WF7sfwAfqc9tYWdvSfHp9Tw"/>
+</div>
+<div class="p-space-md flex justify-between items-center bg-surface-container-lowest">
+<div>
+<span class="font-label-mono-sm text-label-mono-sm text-primary-container uppercase">Asset Validation</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Modern Hydronic Plants</h4>
+</div>
+<span class="material-symbols-outlined text-secondary text-[22px]">tune</span>
+</div>
+</div>
+<div class="group relative rounded-xl overflow-hidden bg-surface-container border border-surface-container-high flex flex-col">
+<div class="h-56 w-full overflow-hidden bg-surface-dim">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Heavy industrial manifold with red valves, stainless steel pipes, calibrated digital pressure gauges, and clean technical fittings inside a commercial chiller plant room." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCysZQ6EJAFoJwvLVGm6SzB4OvYnFHoJHAuANzCCCSjGdMyf2POnZiEpdhXXCMgQIliBwFa-QG8LG_UF93gGpGwPt66yMnwoiaTNQWgOfVHtb6lVZnRjxT1CNZAj0b00N8GLwa-qR2z49hSFuWB64KwCdf17-O___cXZkfj6kzn6fLLkTPzrEM1A194exBXpENhlV_KQgBNltpvozzR3pNACwLo5fIsm-NFV8gZpRDWjFACQ--JQig_7w"/>
+</div>
+<div class="p-space-md flex justify-between items-center bg-surface-container-lowest">
+<div>
+<span class="font-label-mono-sm text-label-mono-sm text-primary-container uppercase">Hydronic Integrity</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Precision Steel Manifolds</h4>
+</div>
+<span class="material-symbols-outlined text-secondary text-[22px]">precision_manufacturing</span>
+</div>
+</div>
+<div class="group relative rounded-xl overflow-hidden bg-surface-container border border-surface-container-high flex flex-col">
+<div class="h-56 w-full overflow-hidden bg-surface-dim">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Certified commercial HVAC mechanical technician wearing uniform with safety gear holding digital multimeter testing terminal voltage in clean commercial plant." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVHxqURk5ZpSR3NHtzi6FzKHxUUakVYPwLR9vT-Pdi40yDE2Y3exEvAYbS_aysnNrhdDXEawo22QcVQOmMzkaN-lXIEYTAEVI9Wn--1ZB2MdoAuIxZ-UTCRh0pC4QSwRCOmzoJKFaVIi3N4KLANQzKSeF-xEPih0eeu2o3tiC3eXn-AAqG8TcQeQia3Uw294MD4KJLmYM0tZixKsD0ieKXePbnFreQSSSIbCpqQtuwkCEAa7GZAtms4A"/>
+</div>
+<div class="p-space-md flex justify-between items-center bg-surface-container-lowest">
+<div>
+<span class="font-label-mono-sm text-label-mono-sm text-primary-container uppercase">Field Telemetry</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Certified Field Technicians</h4>
+</div>
+<span class="material-symbols-outlined text-secondary text-[22px]">engineering</span>
+</div>
+</div>
+</div>
+<!-- 6-Step Pipeline Grid -->
+<div class="flex items-center justify-between mb-8 pb-4 border-b border-surface-container-high">
+<div>
+<span class="font-label-technical text-label-technical text-secondary uppercase tracking-widest">Standard Operating Procedure</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">6-Step Mechanical Execution Pipeline</h2>
+</div>
+<div class="hidden sm:flex items-center gap-space-sm font-label-mono-sm text-label-mono-sm text-secondary">
+<span class="inline-block w-2.5 h-2.5 rounded-full bg-primary-container"></span>
+<span>Zero Unplanned Shutdowns</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Step 01 -->
+<div class="p-8 bg-surface-container-lowest border border-surface-container-high rounded-xl hover:border-surface-dim hover:shadow-md transition-all flex flex-col justify-between group">
+<div>
+<div class="flex items-center justify-between mb-6">
+<span class="font-label-mono-sm text-label-mono-sm px-2.5 py-1 rounded bg-surface-container-low text-primary-container font-semibold tracking-wider">
+                STEP // 01
+              </span>
+<span class="font-label-mono-sm text-label-mono-sm text-secondary">PHASE 1</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary-container transition-colors mb-3">
+              Initial Assessment
+            </h3>
+<p class="font-body-md text-body-md text-secondary leading-relaxed mb-6">
+              Equipment schedule review, historical service logs, warranty baseline, and mapping facility heat-load expectations against original design criteria.
+            </p>
+</div>
+<div class="pt-4 border-t border-surface-container-low flex items-center justify-between text-secondary font-label-mono-sm text-label-mono-sm">
+<span>AUDIT DELIVERABLE</span>
+<span class="text-on-surface font-medium">Equip. Registry Sheet</span>
+</div>
+</div>
+<!-- Step 02 -->
+<div class="p-8 bg-surface-container-lowest border border-surface-container-high rounded-xl hover:border-surface-dim hover:shadow-md transition-all flex flex-col justify-between group">
+<div>
+<div class="flex items-center justify-between mb-6">
+<span class="font-label-mono-sm text-label-mono-sm px-2.5 py-1 rounded bg-surface-container-low text-primary-container font-semibold tracking-wider">
+                STEP // 02
+              </span>
+<span class="font-label-mono-sm text-label-mono-sm text-secondary">PHASE 1</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary-container transition-colors mb-3">
+              Site Inspection &amp; Telemetry
+            </h3>
+<p class="font-body-md text-body-md text-secondary leading-relaxed mb-6">
+              Physical plant audit including precision amp draws, refrigerant pressure diagnostics, laser shaft alignment, and rotating equipment vibration analysis.
+            </p>
+</div>
+<div class="pt-4 border-t border-surface-container-low flex items-center justify-between text-secondary font-label-mono-sm text-label-mono-sm">
+<span>FIELD TESTING</span>
+<span class="text-on-surface font-medium">Vibration &amp; Amp Signatures</span>
+</div>
+</div>
+<!-- Step 03 -->
+<div class="p-8 bg-surface-container-lowest border border-surface-container-high rounded-xl hover:border-surface-dim hover:shadow-md transition-all flex flex-col justify-between group">
+<div>
+<div class="flex items-center justify-between mb-6">
+<span class="font-label-mono-sm text-label-mono-sm px-2.5 py-1 rounded bg-surface-container-low text-primary-container font-semibold tracking-wider">
+                STEP // 03
+              </span>
+<span class="font-label-mono-sm text-label-mono-sm text-secondary">PHASE 2</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary-container transition-colors mb-3">
+              Technical Proposal
+            </h3>
+<p class="font-body-md text-body-md text-secondary leading-relaxed mb-6">
+              Itemized scope of work with transparent OEM equipment specs, calculated component lead times, and locked-in guaranteed fixed pricing without change orders.
+            </p>
+</div>
+<div class="pt-4 border-t border-surface-container-low flex items-center justify-between text-secondary font-label-mono-sm text-label-mono-sm">
+<span>COMMERCIAL TERMS</span>
+<span class="text-on-surface font-medium">Firm Fixed Bid</span>
+</div>
+</div>
+<!-- Step 04 -->
+<div class="p-8 bg-surface-container-lowest border border-surface-container-high rounded-xl hover:border-surface-dim hover:shadow-md transition-all flex flex-col justify-between group">
+<div>
+<div class="flex items-center justify-between mb-6">
+<span class="font-label-mono-sm text-label-mono-sm px-2.5 py-1 rounded bg-surface-container-low text-primary-container font-semibold tracking-wider">
+                STEP // 04
+              </span>
+<span class="font-label-mono-sm text-label-mono-sm text-secondary">PHASE 2</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary-container transition-colors mb-3">
+              Scheduling &amp; Logistics
+            </h3>
+<p class="font-body-md text-body-md text-secondary leading-relaxed mb-6">
+              Coordinated crane pick permits, off-peak rigging windows, and comprehensive safety plans formulated specifically to prevent any tenant disruption.
+            </p>
+</div>
+<div class="pt-4 border-t border-surface-container-low flex items-center justify-between text-secondary font-label-mono-sm text-label-mono-sm">
+<span>COORDINATION</span>
+<span class="text-on-surface font-medium">Rigging &amp; Traffic Logistics</span>
+</div>
+</div>
+<!-- Step 05 -->
+<div class="p-8 bg-surface-container-lowest border border-surface-container-high rounded-xl hover:border-surface-dim hover:shadow-md transition-all flex flex-col justify-between group">
+<div>
+<div class="flex items-center justify-between mb-6">
+<span class="font-label-mono-sm text-label-mono-sm px-2.5 py-1 rounded bg-surface-container-low text-primary-container font-semibold tracking-wider">
+                STEP // 05
+              </span>
+<span class="font-label-mono-sm text-label-mono-sm text-secondary">PHASE 3</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary-container transition-colors mb-3">
+              Installation &amp; Service
+            </h3>
+<p class="font-body-md text-body-md text-secondary leading-relaxed mb-6">
+              OSHA-30 and EPA Universal certified mechanical technicians executing exact piping, electrical terminations, and refrigerant recovery per ASME standards.
+            </p>
+</div>
+<div class="pt-4 border-t border-surface-container-low flex items-center justify-between text-secondary font-label-mono-sm text-label-mono-sm">
+<span>STANDARDS</span>
+<span class="text-on-surface font-medium">EPA Universal • OSHA 30</span>
+</div>
+</div>
+<!-- Step 06 -->
+<div class="p-8 bg-surface-container-lowest border border-surface-container-high rounded-xl hover:border-surface-dim hover:shadow-md transition-all flex flex-col justify-between group">
+<div>
+<div class="flex items-center justify-between mb-6">
+<span class="font-label-mono-sm text-label-mono-sm px-2.5 py-1 rounded bg-surface-container-low text-primary-container font-semibold tracking-wider">
+                STEP // 06
+              </span>
+<span class="font-label-mono-sm text-label-mono-sm text-secondary">PHASE 3</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary-container transition-colors mb-3">
+              Verification &amp; Digital Turnover
+            </h3>
+<p class="font-body-md text-body-md text-secondary leading-relaxed mb-6">
+              Certified air and hydronic balancing (TAB), BACnet control sensor calibration, baseline benchmark reports, and full digital maintenance binder turnover.
+            </p>
+</div>
+<div class="pt-4 border-t border-surface-container-low flex items-center justify-between text-secondary font-label-mono-sm text-label-mono-sm">
+<span>FINAL AS-BUILT</span>
+<span class="text-on-surface font-medium">NEBB Certified TAB Record</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Facility Manager Preparation Checklist Section -->
+<section class="w-full bg-surface-container-low py-16 lg:py-20 px-margin lg:px-margin-desktop border-y border-surface-container-high">
+<div class="max-w-[1320px] mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop items-start">
+<div class="lg:col-span-5 flex flex-col gap-space-sm">
+<span class="font-label-technical text-label-technical text-primary-container uppercase tracking-widest">Pre-Maintenance Intake</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">What to Prepare Before Requesting Maintenance</h2>
+<p class="font-body-md text-body-md text-secondary leading-relaxed mb-4">
+            To ensure zero delays during initial dispatch, our engineering team utilizes this facility intake protocol. Having these baseline operational datapoints available allows us to deploy the correct mechanical team and telemetry instruments on the very first dispatch.
+          </p>
+<div class="p-6 bg-surface-container-lowest border border-surface-container-high rounded-xl">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary-container text-2xl mt-0.5">quick_reference_all</span>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mb-1">Fast-Track Verification</h4>
+<p class="font-body-sm text-body-sm text-secondary">
+                  Already have an equipment binder or BMS export? Upload schedules directly during technical intake or transmit directly to our operations engineers.
+                </p>
+</div>
+</div>
+</div>
+</div>
+<div class="lg:col-span-7 bg-surface-container-lowest border border-surface-container-high rounded-xl p-8 shadow-sm">
+<div class="flex items-center justify-between mb-6 pb-4 border-b border-surface-container-high">
+<span class="font-label-technical text-label-technical text-on-surface uppercase tracking-wider">Facility Readiness Checklist (7 Points)</span>
+<span class="font-label-mono-sm text-label-mono-sm text-secondary">FM PROTOCOL V4</span>
+</div>
+<div class="space-y-4">
+<!-- Item 1 -->
+<div class="flex items-start gap-4 p-3.5 rounded-lg bg-surface-container-low/60 hover:bg-surface-container-low transition-colors">
+<div class="w-6 h-6 rounded bg-surface-container-high flex items-center justify-center shrink-0 mt-0.5 text-primary-container">
+<span class="material-symbols-outlined text-[18px]">domain</span>
+</div>
+<div class="flex-1">
+<div class="flex items-baseline justify-between">
+<h4 class="font-headline-sm text-[16px] text-on-surface">Building Address &amp; Access Logistics</h4>
+<span class="font-label-mono-sm text-[10px] text-secondary uppercase">Access Required</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary mt-0.5">
+                  Confirm exact roof hatch locations, service freight elevator dimensions, keycard protocols, and security escort desk contact details.
+                </p>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="flex items-start gap-4 p-3.5 rounded-lg bg-surface-container-low/60 hover:bg-surface-container-low transition-colors">
+<div class="w-6 h-6 rounded bg-surface-container-high flex items-center justify-center shrink-0 mt-0.5 text-primary-container">
+<span class="material-symbols-outlined text-[18px]">badge</span>
+</div>
+<div class="flex-1">
+<div class="flex items-baseline justify-between">
+<h4 class="font-headline-sm text-[16px] text-on-surface">Equipment Brand &amp; Model Numbers</h4>
+<span class="font-label-mono-sm text-[10px] text-secondary uppercase">Critical ID</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary mt-0.5">
+                  Clear photograph or transcript of compressor/chiller nameplate stamps, model designations, and serial tag codes.
+                </p>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="flex items-start gap-4 p-3.5 rounded-lg bg-surface-container-low/60 hover:bg-surface-container-low transition-colors">
+<div class="w-6 h-6 rounded bg-surface-container-high flex items-center justify-center shrink-0 mt-0.5 text-primary-container">
+<span class="material-symbols-outlined text-[18px]">hvac</span>
+</div>
+<div class="flex-1">
+<div class="flex items-baseline justify-between">
+<h4 class="font-headline-sm text-[16px] text-on-surface">System Architecture Designation</h4>
+<span class="font-label-mono-sm text-[10px] text-secondary uppercase">Plant Class</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary mt-0.5">
+                  Specify plant topology: Packaged RTUs, Split DX, Water-Cooled Centrifugal Chiller, Hydronic Gas Boilers, or Open Cooling Towers.
+                </p>
+</div>
+</div>
+<!-- Item 4 -->
+<div class="flex items-start gap-4 p-3.5 rounded-lg bg-surface-container-low/60 hover:bg-surface-container-low transition-colors">
+<div class="w-6 h-6 rounded bg-surface-container-high flex items-center justify-center shrink-0 mt-0.5 text-primary-container">
+<span class="material-symbols-outlined text-[18px]">history</span>
+</div>
+<div class="flex-1">
+<div class="flex items-baseline justify-between">
+<h4 class="font-headline-sm text-[16px] text-on-surface">Last Service Date &amp; Historical Logs</h4>
+<span class="font-label-mono-sm text-[10px] text-secondary uppercase">Baseline Records</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary mt-0.5">
+                  Recent oil analysis reports, last chemical water treatment records, filter/belt change logs, and any major compressor overhauls.
+                </p>
+</div>
+</div>
+<!-- Item 5 -->
+<div class="flex items-start gap-4 p-3.5 rounded-lg bg-surface-container-low/60 hover:bg-surface-container-low transition-colors">
+<div class="w-6 h-6 rounded bg-surface-container-high flex items-center justify-center shrink-0 mt-0.5 text-primary-container">
+<span class="material-symbols-outlined text-[18px]">warning</span>
+</div>
+<div class="flex-1">
+<div class="flex items-baseline justify-between">
+<h4 class="font-headline-sm text-[16px] text-on-surface">Description of Existing Symptoms</h4>
+<span class="font-label-mono-sm text-[10px] text-secondary uppercase">Telemetry Data</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary mt-0.5">
+                  Specific active alarm codes, abnormal harmonics/vibrations, differential pressure drops across coils, or static air pressure imbalances.
+                </p>
+</div>
+</div>
+<!-- Item 6 -->
+<div class="flex items-start gap-4 p-3.5 rounded-lg bg-surface-container-low/60 hover:bg-surface-container-low transition-colors">
+<div class="w-6 h-6 rounded bg-surface-container-high flex items-center justify-center shrink-0 mt-0.5 text-primary-container">
+<span class="material-symbols-outlined text-[18px]">shield</span>
+</div>
+<div class="flex-1">
+<div class="flex items-baseline justify-between">
+<h4 class="font-headline-sm text-[16px] text-on-surface">Site Safety &amp; Environmental Clearance</h4>
+<span class="font-label-mono-sm text-[10px] text-secondary uppercase">Compliance</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary mt-0.5">
+                  Facility-specific safety orientations, site badging protocols, lock-out/tag-out rules, and ARC flash PPE requirements.
+                </p>
+</div>
+</div>
+<!-- Item 7 -->
+<div class="flex items-start gap-4 p-3.5 rounded-lg bg-surface-container-low/60 hover:bg-surface-container-low transition-colors">
+<div class="w-6 h-6 rounded bg-surface-container-high flex items-center justify-center shrink-0 mt-0.5 text-primary-container">
+<span class="material-symbols-outlined text-[18px]">schedule</span>
+</div>
+<div class="flex-1">
+<div class="flex items-baseline justify-between">
+<h4 class="font-headline-sm text-[16px] text-on-surface">Preferred Low-Impact Service Windows</h4>
+<span class="font-label-mono-sm text-[10px] text-secondary uppercase">Schedule</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary mt-0.5">
+                  Tenant acoustic restrictions, off-peak utility demand windows, evening crane approvals, or designated weekend testing slots.
+                </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Tiered Maintenance Agreement Matrix -->
+<section class="w-full bg-surface-container-lowest py-16 lg:py-24 px-margin lg:px-margin-desktop">
+<div class="max-w-[1320px] mx-auto">
+<div class="text-center max-w-3xl mx-auto mb-16">
+<span class="font-label-technical text-label-technical text-primary-container uppercase tracking-widest">
+          Service Level Agreements
+        </span>
+<h2 class="font-display-xl text-display-xl text-on-surface mt-2 mb-4">
+          Tiered Maintenance Matrix
+        </h2>
+<p class="font-body-lg text-body-lg text-secondary">
+          Predictable lifecycle care engineered to preserve mechanical assets, lower energy consumption, and guarantee immediate engineering dispatch.
+        </p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch">
+<!-- Tier 01: Baseline Compliance -->
+<div class="bg-surface-container-lowest border border-surface-container-high rounded-xl p-8 flex flex-col justify-between hover:shadow-lg transition-all">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="font-label-mono-sm text-label-mono-sm font-semibold text-secondary tracking-widest uppercase">TIER // 01</span>
+<span class="font-label-technical text-label-technical px-2.5 py-1 bg-surface-container-low rounded text-secondary">SCHEDULED COMPLIANCE</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Baseline Compliance</h3>
+<p class="font-body-sm text-body-sm text-secondary mb-6">
+              Standard regulatory compliance and preventative physical maintenance designed for light commercial properties and corporate offices.
+            </p>
+<div class="py-4 border-y border-surface-container-high mb-6">
+<div class="flex items-baseline gap-1">
+<span class="font-display-xl text-[36px] font-bold text-on-surface leading-none">Quarterly</span>
+<span class="font-label-mono-sm text-label-mono-sm text-secondary">/ Plant Cycle</span>
+</div>
+<span class="font-label-mono-sm text-[11px] text-secondary">Scheduled dispatch cadence</span>
+</div>
+<ul class="space-y-3 font-body-sm text-body-sm text-secondary mb-8">
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary-container text-[18px]">check_circle</span>
+<span>Quarterly MERV 13 filter &amp; v-belt changes</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary-container text-[18px]">check_circle</span>
+<span>EPA Section 608 certified leak inspections</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary-container text-[18px]">check_circle</span>
+<span>Motor bearing lubrication &amp; belt tensioning</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary-container text-[18px]">check_circle</span>
+<span>Electrical contractor amp draw verification</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary-container text-[18px]">check_circle</span>
+<span>Basic compliance safety record filing</span>
+</li>
+</ul>
+</div>
+<a class="w-full text-center py-2.5 px-4 bg-surface-container-lowest border border-surface-container-high hover:border-on-surface text-on-surface font-button-text text-button-text rounded-lg transition-colors" href="#">
+            Select Baseline Tier
+          </a>
+</div>
+<!-- Tier 02: Planned Comprehensive (Featured) -->
+<div class="relative bg-surface-container-lowest border-2 border-primary-container rounded-xl p-8 flex flex-col justify-between shadow-md">
+<div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-primary-container text-on-primary font-label-mono-sm text-label-mono-sm font-semibold tracking-wider uppercase px-4 py-1 rounded-full shadow-sm">
+            Most Common for Facilities
+          </div>
+<div>
+<div class="flex items-center justify-between mb-4 mt-2">
+<span class="font-label-mono-sm text-label-mono-sm font-semibold text-primary-container tracking-widest uppercase">TIER // 02</span>
+<span class="font-label-technical text-label-technical px-2.5 py-1 bg-primary-fixed text-primary font-semibold rounded">PREDICTIVE ANALYTICS</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Planned Comprehensive</h3>
+<p class="font-body-sm text-body-sm text-secondary mb-6">
+              Full lifecycle asset protection combining preventive servicing with vibration telemetry and discounted emergency parts coverage.
+            </p>
+<div class="py-4 border-y border-surface-container-high mb-6">
+<div class="flex items-baseline gap-1">
+<span class="font-display-xl text-[36px] font-bold text-on-surface leading-none">Bi-Monthly</span>
+<span class="font-label-mono-sm text-label-mono-sm text-secondary">/ Plant Cycle</span>
+</div>
+<span class="font-label-mono-sm text-[11px] text-primary-container font-medium">Includes 4-Hour Priority SLA</span>
+</div>
+<ul class="space-y-3 font-body-sm text-body-sm text-on-surface mb-8">
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary-container text-[18px]">check_circle</span>
+<span>Everything in Baseline Compliance</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary-container text-[18px]">check_circle</span>
+<span>Bi-monthly chiller &amp; boiler physical audits</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary-container text-[18px]">check_circle</span>
+<span>Laser vibration testing &amp; dynamic balancing</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary-container text-[18px]">check_circle</span>
+<span>Hydronic loop water chemistry sampling</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary-container text-[18px]">check_circle</span>
+<span>15% discount on all OEM replacement parts</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary-container text-[18px]">check_circle</span>
+<span>Guaranteed 4-hour emergency field dispatch</span>
+</li>
+</ul>
+</div>
+<a class="w-full text-center py-2.5 px-4 bg-primary-container hover:bg-primary text-on-primary font-button-text text-button-text rounded-lg transition-colors" href="#">
+            Request Comprehensive SLA
+          </a>
+</div>
+<!-- Tier 03: Mission-Critical 24/7 -->
+<div class="bg-surface-container-lowest border border-surface-container-high rounded-xl p-8 flex flex-col justify-between hover:shadow-lg transition-all">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="font-label-mono-sm text-label-mono-sm font-semibold text-secondary tracking-widest uppercase">TIER // 03</span>
+<span class="font-label-technical text-label-technical px-2.5 py-1 bg-surface-container-low rounded text-on-surface">ZERO TOLERANCE</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Mission-Critical 24/7</h3>
+<p class="font-body-sm text-body-sm text-secondary mb-6">
+              Engineered exclusively for acute healthcare, cleanrooms, and data infrastructure requiring continuous BACnet uptime monitoring.
+            </p>
+<div class="py-4 border-y border-surface-container-high mb-6">
+<div class="flex items-baseline gap-1">
+<span class="font-display-xl text-[36px] font-bold text-on-surface leading-none">Continuous</span>
+<span class="font-label-mono-sm text-label-mono-sm text-secondary">/ Telemetry</span>
+</div>
+<span class="font-label-mono-sm text-[11px] text-secondary">Guaranteed 2-Hour SLA Dispatch</span>
+</div>
+<ul class="space-y-3 font-body-sm text-body-sm text-secondary mb-8">
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary-container text-[18px]">check_circle</span>
+<span>Everything in Planned Comprehensive</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary-container text-[18px]">check_circle</span>
+<span>24/7 BACnet telemetry &amp; fault alerts</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary-container text-[18px]">check_circle</span>
+<span>Dedicated Named Lead Mechanical Engineer</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary-container text-[18px]">check_circle</span>
+<span>Guaranteed 2-hour on-site arrival SLA</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary-container text-[18px]">check_circle</span>
+<span>Critical spare parts cached in regional locker</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary-container text-[18px]">check_circle</span>
+<span>Hospital/cleanroom particulate certification</span>
+</li>
+</ul>
+</div>
+<a class="w-full text-center py-2.5 px-4 bg-surface-container-lowest border border-surface-container-high hover:border-on-surface text-on-surface font-button-text text-button-text rounded-lg transition-colors" href="#">
+            Deploy Mission-Critical SLA
+          </a>
+</div>
+</div>
+</div>
+</section>
+<!-- Technical FAQ Section -->
+<section class="w-full bg-surface-container-low py-16 lg:py-20 px-margin lg:px-margin-desktop border-t border-surface-container-high">
+<div class="max-w-[1000px] mx-auto">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-space-sm">
+<div>
+<span class="font-label-technical text-label-technical text-primary-container uppercase tracking-widest">Engineering Inquiries</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mt-1">Frequently Asked Technical Questions</h2>
+</div>
+<span class="font-label-mono-sm text-label-mono-sm text-secondary">REV 2024.3 // ASHRAE 90.1</span>
+</div>
+<div class="space-y-4" id="faq-accordion">
+<!-- FAQ 1 -->
+<div class="bg-surface-container-lowest border border-surface-container-high rounded-xl overflow-hidden">
+<button class="w-full p-6 text-left flex items-center justify-between gap-4 font-headline-sm text-headline-sm text-on-surface focus:outline-none" onclick="toggleFaq(this)">
+<span>How do you service equipment in fully occupied commercial or medical buildings?</span>
+<span class="material-symbols-outlined text-secondary transform transition-transform duration-200">expand_more</span>
+</button>
+<div class="px-6 pb-6 pt-0 text-secondary font-body-md text-body-md border-t border-surface-container-high/40 mt-1">
+            We isolate mechanical service work behind engineered containment barriers when necessary, utilize low-decibel vacuum and recovery equipment, and schedule all high-noise procedures (such as crane rigging or high-pressure flushing) during pre-approved off-peak quiet hours. Our technicians carry badging credentials and maintain cleanroom and occupied-space protocols.
+          </div>
+</div>
+<!-- FAQ 2 -->
+<div class="bg-surface-container-lowest border border-surface-container-high rounded-xl overflow-hidden">
+<button class="w-full p-6 text-left flex items-center justify-between gap-4 font-headline-sm text-headline-sm text-on-surface focus:outline-none" onclick="toggleFaq(this)">
+<span>What is the standard recommended maintenance frequency for central plants?</span>
+<span class="material-symbols-outlined text-secondary transform transition-transform duration-200">expand_more</span>
+</button>
+<div class="px-6 pb-6 pt-0 text-secondary font-body-md text-body-md border-t border-surface-container-high/40 mt-1">
+            Centrifugal chillers, cooling towers, and primary hydronic loops require bi-monthly mechanical inspections and continuous chemical water testing. Critical sensors, refrigerant charge levels, and electrical motor contacts should undergo full diagnostic evaluation at minimum once per quarter to satisfy ASHRAE 90.1 baseline efficiency targets.
+          </div>
+</div>
+<!-- FAQ 3 -->
+<div class="bg-surface-container-lowest border border-surface-container-high rounded-xl overflow-hidden">
+<button class="w-full p-6 text-left flex items-center justify-between gap-4 font-headline-sm text-headline-sm text-on-surface focus:outline-none" onclick="toggleFaq(this)">
+<span>What is the emergency dispatch protocol if our plant experiences an unexpected trip?</span>
+<span class="material-symbols-outlined text-secondary transform transition-transform duration-200">expand_more</span>
+</button>
+<div class="px-6 pb-6 pt-0 text-secondary font-body-md text-body-md border-t border-surface-container-high/40 mt-1">
+            Clients enrolled in our Comprehensive or Mission-Critical SLAs have direct telephonic access to our Regional Mechanical Dispatch center (800-555-0194). A certified field technician is automatically mobilized with priority vehicle routing, carrying dedicated system diagnostics and manufacturer diagnostic interfaces to diagnose the failure within the guaranteed SLA window.
+          </div>
+</div>
+<!-- FAQ 4 -->
+<div class="bg-surface-container-lowest border border-surface-container-high rounded-xl overflow-hidden">
+<button class="w-full p-6 text-left flex items-center justify-between gap-4 font-headline-sm text-headline-sm text-on-surface focus:outline-none" onclick="toggleFaq(this)">
+<span>What measurable energy efficiency recovery is achieved through regular coil cleaning?</span>
+<span class="material-symbols-outlined text-secondary transform transition-transform duration-200">expand_more</span>
+</button>
+<div class="px-6 pb-6 pt-0 text-secondary font-body-md text-body-md border-t border-surface-container-high/40 mt-1">
+            According to ASHRAE field research, dirty evaporator and condenser coils increase compressor energy consumption by up to 37% due to elevated condensing temperatures and diminished heat transfer. Our precision chemical wash and fin-combing restores static pressure drops and airflow to within 98% of original factory design curves.
+          </div>
+</div>
+<!-- FAQ 5 -->
+<div class="bg-surface-container-lowest border border-surface-container-high rounded-xl overflow-hidden">
+<button class="w-full p-6 text-left flex items-center justify-between gap-4 font-headline-sm text-headline-sm text-on-surface focus:outline-none" onclick="toggleFaq(this)">
+<span>Which commercial and industrial HVAC equipment manufacturers are supported?</span>
+<span class="material-symbols-outlined text-secondary transform transition-transform duration-200">expand_more</span>
+</button>
+<div class="px-6 pb-6 pt-0 text-secondary font-body-md text-body-md border-t border-surface-container-high/40 mt-1">
+            Our technicians are factory-certified and maintain diagnostic tooling across Carrier, Trane, York, Daikin, McQuay, Multistack, Liebert/Vertiv, AAON, and Cleaver-Brooks. We maintain direct OEM parts supply chain access for all major commercial lines.
+          </div>
+</div>
+</div>
+</div>
+</section>
+<!-- Bottom Baseline Plant Assessment Callout -->
+<section class="w-full bg-surface-container-lowest py-16 px-margin lg:px-margin-desktop">
+<div class="max-w-[1320px] mx-auto">
+<div class="bg-surface-container-low border border-surface-container-high rounded-2xl p-8 lg:p-14 flex flex-col lg:flex-row items-center justify-between gap-space-lg">
+<div class="flex flex-col gap-space-xs max-w-2xl">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 bg-primary-container"></span>
+<span class="font-label-technical text-label-technical text-primary-container uppercase tracking-widest">
+              Direct Engineering Engagement
+            </span>
+</div>
+<h2 class="font-display-xl text-[36px] lg:text-[44px] leading-tight text-on-surface font-semibold">
+            Schedule a Baseline Plant Assessment
+          </h2>
+<p class="font-body-md text-body-md text-secondary mt-1">
+            Deploy our regional mechanical specialists to inspect your central plant, capture operational telemetry, and deliver an itemized maintenance roadmap.
+          </p>
+</div>
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-space-md w-full lg:w-auto shrink-0">
+<a class="px-6 py-3.5 bg-surface-container-lowest border border-surface-container-high hover:border-on-surface text-on-surface font-button-text text-button-text rounded-lg flex items-center justify-center gap-2 transition-colors" href="tel:8005550194">
+<span class="material-symbols-outlined text-[20px] text-primary-container">call</span>
+<span>(800) 555-0194</span>
+</a>
+<a class="px-7 py-3.5 bg-primary-container hover:bg-primary text-on-primary font-button-text text-button-text rounded-lg flex items-center justify-center transition-colors" href="#">
+            Request Site Inspection
+          </a>
+</div>
+</div>
+</div>
+</section>
+</div>
+<script>
+  function toggleFaq(button) {
+    const content = button.nextElementSibling;
+    const icon = button.querySelector('.material-symbols-outlined');
+    const isHidden = content.style.display === 'none';
+    
+    if (isHidden) {
+      content.style.display = 'block';
+      icon.style.transform = 'rotate(180deg)';
+    } else {
+      content.style.display = 'none';
+      icon.style.transform = 'rotate(0deg)';
+    }
+  }
+
+  // Initialize closed states for FAQ accordions 2 to 5
+  document.addEventListener('DOMContentLoaded', () => {
+    const accordions = document.querySelectorAll('#faq-accordion > div');
+    accordions.forEach((item, index) => {
+      if (index > 0) {
+        const content = item.querySelector('div:last-child');
+        const icon = item.querySelector('.material-symbols-outlined');
+        if (content) content.style.display = 'none';
+        if (icon) icon.style.transform = 'rotate(0deg)';
+      } else {
+        const icon = item.querySelector('.material-symbols-outlined');
+        if (icon) icon.style.transform = 'rotate(180deg)';
+      }
+    });
+  });
+</script></main><footer class="w-full bg-inverse-surface text-inverse-on-surface border-t border-surface-container-high"><div class="max-w-[1320px] mx-auto px-margin lg:px-margin-desktop py-space-xl"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter-desktop"><div class="flex flex-col gap-space-sm"><div class="flex items-center gap-space-sm mb-space-xs"><img alt="Vertex Solutions Clean Vector Logo" class="h-7 w-auto object-contain brightness-0 invert" src="https://lh3.googleusercontent.com/aida/AEtjO1X27bRqdcNiUeB0pb_hPPkOuwnVSIjn6iEbuL3_TwkKW_oM6ieJuds08YRDyBkKaOusCOpRkK0hOFpd79vdp3gylb2BvKjMCAnvS-LzBJ060rE5LgvPdbhUfGT9b8mqqvfRUpuiUaPcJUErQXRnCeomcgSRZRN3t19EZ56dg9xyNk7cB4XXL3iDTgoJU-aZMZQ7l_0R6DwGBzK7k_T85k3WTleTm0eR_E6A1Gz8K9rah5qRno0eLCDCeSo"/><span class="font-headline-sm text-headline-sm text-inverse-on-surface">VERTEX</span></div><p class="font-body-sm text-body-sm text-surface-dim">High-performance commercial mechanical engineering, chillers, automated controls, and critical infrastructure lifecycle maintenance.</p><div class="font-label-mono-sm text-label-mono-sm text-surface-dim mt-space-sm">HQ: 4200 Precision Way, Suite 800<br/>Indianapolis, IN 46240<br/>Direct: (800) 555-0194</div></div><div class="flex flex-col gap-space-xs"><span class="font-label-technical text-label-technical uppercase tracking-widest text-surface-container mb-space-sm">Mechanical Services</span><a class="font-body-sm text-body-sm text-surface-dim hover:text-inverse-on-surface transition-colors" href="#">Centrifugal &amp; Screw Chillers</a><a class="font-body-sm text-body-sm text-surface-dim hover:text-inverse-on-surface transition-colors" href="#">Industrial Boilers &amp; Hydronics</a><a class="font-body-sm text-body-sm text-surface-dim hover:text-inverse-on-surface transition-colors" href="#">Variable Refrigerant Flow (VRF)</a><a class="font-body-sm text-body-sm text-surface-dim hover:text-inverse-on-surface transition-colors" href="#">Building Automation &amp; BACnet</a><a class="font-body-sm text-body-sm text-surface-dim hover:text-inverse-on-surface transition-colors" href="#">Critical Cleanroom Ventilation</a></div><div class="flex flex-col gap-space-xs"><span class="font-label-technical text-label-technical uppercase tracking-widest text-surface-container mb-space-sm">Engineering Specs</span><a class="font-body-sm text-body-sm text-surface-dim hover:text-inverse-on-surface transition-colors" href="#">ASHRAE Standard 90.1 Compliance</a><a class="font-body-sm text-body-sm text-surface-dim hover:text-inverse-on-surface transition-colors" href="#">BIM &amp; Revit Fabrication Models</a><a class="font-body-sm text-body-sm text-surface-dim hover:text-inverse-on-surface transition-colors" href="#">NEBB Certified Air &amp; Hydronic TAB</a><a class="font-body-sm text-body-sm text-surface-dim hover:text-inverse-on-surface transition-colors" href="#">Predictive Vibration Telemetry</a><a class="font-body-sm text-body-sm text-surface-dim hover:text-inverse-on-surface transition-colors" href="#">Decarbonization &amp; Heat Recovery</a></div><div class="flex flex-col gap-space-sm"><span class="font-label-technical text-label-technical uppercase tracking-widest text-surface-container mb-space-xs">Regional Coverage &amp; Specs</span><p class="font-body-sm text-body-sm text-surface-dim">Dedicated engineering dispatch across Indiana, Ohio, and Kentucky with guaranteed 2-hour Tier-1 uptime SLAs.</p><div class="flex flex-wrap gap-1.5 pt-space-xs"><span class="font-label-mono-sm text-label-mono-sm bg-tertiary px-2 py-0.5 rounded text-surface-bright">ASHRAE 90.1</span><span class="font-label-mono-sm text-label-mono-sm bg-tertiary px-2 py-0.5 rounded text-surface-bright">NEBB TAB</span><span class="font-label-mono-sm text-label-mono-sm bg-tertiary px-2 py-0.5 rounded text-surface-bright">OSHA 30</span><span class="font-label-mono-sm text-label-mono-sm bg-tertiary px-2 py-0.5 rounded text-surface-bright">EPA UNIVERSAL</span></div></div></div><div class="mt-space-xl pt-space-md border-t border-tertiary-container flex flex-col md:flex-row items-center justify-between gap-space-sm text-surface-dim font-label-mono-sm text-label-mono-sm"><div>© 2024 Vertex Solutions Mechanical Engineering Corporation. All rights reserved.</div><div class="flex items-center gap-space-md"><a class="hover:text-inverse-on-surface transition-colors" href="#">Safety Protocols</a><a class="hover:text-inverse-on-surface transition-colors" href="#">Engineering Licensing</a><a class="hover:text-inverse-on-surface transition-colors" href="#">Privacy Statement</a></div></div></div></footer></body></html>
